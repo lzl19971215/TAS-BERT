@@ -173,20 +173,22 @@ if __name__ == '__main__':
 	parser = argparse.ArgumentParser()
 	parser.add_argument('--dataset',
 						type=str,
-						choices=["semeval2015", "semeval2016"],
+						choices=["semeval2015", "semeval2016", "laptop"],
 						help='dataset, as a folder name, you can choose from semeval2015 and semeval2016')
 	args = parser.parse_args()
 
 	path = args.dataset + '/three_joint'
 	output_path = path + '/TO'
 
-	if '2015' in args.dataset:
+	if args.dataset == 'semeval2015':
 		train_file = 'ABSA_15_Restaurants_Train'
 		test_file = 'ABSA_15_Restaurants_Test'
-	else:
+	elif args.dataset == 'semeval2016':
 		train_file = 'ABSA_16_Restaurants_Train'
 		test_file = 'ABSA_16_Restaurants_Test'
-
+	else:
+		train_file = 'laptop_tas_train'
+		test_file = 'laptop_tas_test'
 	train_output = 'train_TAS'
 	test_output = 'test_TAS'
 

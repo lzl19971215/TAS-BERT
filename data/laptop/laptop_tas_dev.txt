@@ -1,0 +1,405 @@
+sentence_id	sentence	target	category	polarity	category_polarity	entailed	start	end
+0	this unit is ` ` pretty ` ` and stylish , so my high school daughter was attracted to it for that reason .	unit	laptop design_features	positive	laptop design_features positive	yes	2	3
+1	for now i ' m okay with upping the experience & device to 3 out of 5 stars .	device	laptop general	neutral	laptop general neutral	yes	12	13
+2	seems unlikely but whatever , i ' ll go with it .	NULL	laptop general	neutral	laptop general neutral	yes	0	0
+3	this version has been my least favorite version i ' ve had for the following reasons listed bellow the pros .	version	laptop general	negative	laptop general negative	yes	8	9
+4	- biggest disappointment is the track pad .	track pad	hardware general	negative	hardware general negative	yes	6	8
+5	should not of bought this chromebook .	chromebook	laptop general	negative	laptop general negative	yes	6	7
+6	after about 5 / 10 minutes of use the screen goes crazy and you have to force to power down and wait to restart .	screen	display operation_performance	negative	display operation_performance negative	yes	10	11
+7	i can not stand the trackpad or the keyboard keys .	trackpad	keyboard general	negative	keyboard general negative	yes	6	7
+7	i can not stand the trackpad or the keyboard keys .	keyboard keys	keyboard general	negative	keyboard general negative	yes	9	11
+8	the keyboard is stiff and unresponsive to my typing at times .	keyboard	keyboard quality	negative	keyboard quality negative	yes	2	3
+9	the chromebook r 11 was hardly used and only a few months old .	chromebook r 11	laptop usability	negative	laptop usability negative	yes	2	5
+10	one day it just would not power up .	NULL	battery operation_performance	negative	battery operation_performance negative	yes	0	0
+11	some apps don ' t work but the play store is still in beta right now	apps	software general	negative	software general negative	yes	2	3
+11	some apps don ' t work but the play store is still in beta right now	play store	software general	neutral	software general neutral	yes	9	11
+12	what really did it was when i tried contacting acer support i was simply told ` ` try a restart ` ` and then ` ` call google , we can ' t help you ` ` .	support	support general	negative	support general negative	yes	11	12
+13	returning it after one day	NULL	laptop general	negative	laptop general negative	yes	0	0
+14	but do not dare will only be good for playing games maybe it will get better .	it	laptop general	positive	laptop general positive	yes	13	14
+15	after some use , the battery charge had logically gone down some ( down to about 80 % ) , and so i went back to my office to plug it in .	battery	battery operation_performance	neutral	battery operation_performance neutral	yes	6	7
+16	asus customer support was through chat and cumbersome .	asus customer support	support general	negative	support general negative	yes	1	4
+17	i had it on my desk and was watching youtube videos and it went black .	NULL	laptop operation_performance	negative	laptop operation_performance negative	yes	0	0
+18	the screen is very dim however .	screen	display operation_performance	negative	display operation_performance negative	yes	2	3
+19	the brand new vivobook is dead in the water !	vivobook	laptop quality	negative	laptop quality negative	yes	4	5
+20	don ' t buy this machine .	machine	laptop general	negative	laptop general negative	yes	6	7
+21	sounds like a good deal for a $ 620 laptop but battery doesn ' t perform as promised i am hardly getting 4 hrs .	laptop	laptop price	positive	laptop price positive	yes	10	11
+21	sounds like a good deal for a $ 620 laptop but battery doesn ' t perform as promised i am hardly getting 4 hrs .	battery	battery operation_performance	negative	battery operation_performance negative	yes	12	13
+22	external speakers were decent sounding until right one gave away and now is heavily distorted at even mid vol .	external speakers	multimedia_devices general	positive	multimedia_devices general positive	yes	1	3
+22	external speakers were decent sounding until right one gave away and now is heavily distorted at even mid vol .	external speakers	multimedia_devices general	negative	multimedia_devices general negative	yes	1	3
+23	screen is good .	screen	display general	positive	display general positive	yes	1	2
+24	keyboard is decent with good travel .	keyboard	keyboard portability	positive	keyboard portability positive	yes	1	2
+25	screen is amazing	screen	display general	positive	display general positive	yes	1	2
+26	thin bezels allow for a compact frame	bezels	laptop design_features	positive	laptop design_features positive	yes	2	3
+27	overall this is a good system for the price and i do recommend the ssd for the price .	system	os price	positive	os price positive	yes	6	7
+27	overall this is a good system for the price and i do recommend the ssd for the price .	ssd	hard_disc price	positive	hard_disc price positive	yes	15	16
+28	but my main concerns for everyone is the heat and fan noises , both are very apparent and if you have this on your lap you better have a laptop tray or keep it on a desk .	fan	fans&cooling operation_performance	negative	fans&cooling operation_performance negative	yes	11	12
+29	always loved asus and they build amazing machines .	asus	company general	positive	company general positive	yes	3	4
+29	always loved asus and they build amazing machines .	machines	laptop general	positive	laptop general positive	yes	8	9
+30	if you can save for 750 - 800 i would recommend going up a bit in the asus line .	asus	company general	positive	company general positive	yes	18	19
+31	it seems like there is a problem with the processor because it constantly starts and stops while i ' m trying to surf the web .	processor	cpu general	negative	cpu general negative	yes	10	11
+32	bought this on may , barely used it and now 4 months later it ' s randomly shutting down every few minutes .	NULL	laptop general	negative	laptop general negative	yes	0	0
+33	pros : lightweight and looks nice .	NULL	laptop portability	positive	laptop portability positive	yes	0	0
+33	pros : lightweight and looks nice .	NULL	laptop general	positive	laptop general positive	yes	0	0
+34	this computer is loud !	computer	laptop design_features	negative	laptop design_features negative	yes	2	3
+35	i am so disgusted and disheartened by my dealings with asus support , it ' s hard to believe .	asus support	support quality	negative	support quality negative	yes	11	13
+36	returned because had it less than a month and it decided to go crazy and start typing by its self ect .	NULL	laptop operation_performance	negative	laptop operation_performance negative	yes	0	0
+37	this computer has wasted so much of my time already .	computer	laptop general	negative	laptop general negative	yes	2	3
+38	it still is nice looking with a textured cover and being black overall .	NULL	laptop design_features	positive	laptop design_features positive	yes	0	0
+39	it opens programs immediately .	NULL	os operation_performance	positive	os operation_performance positive	yes	0	0
+40	i do not think i will need to upgrade the ram .	ram	memory general	neutral	memory general neutral	yes	11	12
+41	acer made a winner here !	acer	laptop general	positive	laptop general positive	yes	1	2
+42	buy this computer and you ' ll be very happy with it .	computer	laptop price	positive	laptop price positive	yes	3	4
+43	+ backlight kb and travel feels pretty nice on the keys .	backlight kb	keyboard operation_performance	positive	keyboard operation_performance positive	yes	2	4
+43	+ backlight kb and travel feels pretty nice on the keys .	keys	keyboard operation_performance	positive	keyboard operation_performance positive	yes	11	12
+44	- an optical drive if you ever want to play a classic game or watch a dvd .	optical drive	optical_drives general	neutral	optical_drives general neutral	yes	3	5
+45	the ports were another thing that i was really excited to see fully included on a laptop in this price range .	ports	ports general	positive	ports general positive	yes	2	3
+45	the ports were another thing that i was really excited to see fully included on a laptop in this price range .	laptop	laptop price	positive	laptop price positive	yes	17	18
+46	i ' ve been happy being able to plug in and run overwatch from time to time on this laptop , with higher settings .	laptop	laptop design_features	positive	laptop design_features positive	yes	20	21
+47	this is the best laptop for the price .	laptop	laptop price	positive	laptop price positive	yes	5	6
+48	i like that it ' s got the 8th generation i5 cpu .	8th generation i5 cpu	cpu general	positive	cpu general positive	yes	9	13
+49	dedicated graphics card	graphics card	graphics general	positive	graphics general positive	yes	2	4
+50	the plastic that borders the screen kind of comes out ever so slightly .	screen	display design_features	negative	display design_features negative	yes	6	7
+51	it ' s pretty fast for a laptop especially a laptop in this price point .	laptop	laptop operation_performance	positive	laptop operation_performance positive	yes	11	12
+51	it ' s pretty fast for a laptop especially a laptop in this price point .	NULL	laptop price	positive	laptop price positive	yes	0	0
+52	i would knock a star for the hard drive size since it ' s incredibly small but at this price you can easily pick up large one to add if you want to and it ' s not like you aren ' t warned when you buy it .	hard drive size	hard_disc miscellaneous	positive	hard_disc miscellaneous positive	yes	8	11
+53	the picture clarity is amazing and the backlit keyboard is awesome .	picture clarity	display quality	positive	display quality positive	yes	2	4
+53	the picture clarity is amazing and the backlit keyboard is awesome .	backlit keyboard	keyboard design_features	positive	keyboard design_features positive	yes	8	10
+54	overall , this budget laptop ticks all the boxes and there is nothing on the market that is new with so many features crammed in at this price .	budget laptop	laptop general	positive	laptop general positive	yes	4	6
+55	can ' t beat it for the price .	NULL	laptop price	positive	laptop price positive	yes	0	0
+56	also love that access to the hd / ssd and ram slots is really easy .	ram slots	memory design_features	positive	memory design_features positive	yes	11	13
+56	also love that access to the hd / ssd and ram slots is really easy .	hd / ssd	memory design_features	positive	memory design_features positive	yes	7	10
+57	acer seems to be the only one who puts together stuff like this .	acer	laptop general	positive	laptop general positive	yes	1	2
+58	the bluetooth connects easily to everything .	bluetooth	multimedia_devices connectivity	positive	multimedia_devices connectivity positive	yes	2	3
+59	it boots in seconds although i usually just leave it on constantly .	boots	laptop operation_performance	positive	laptop operation_performance positive	yes	2	3
+60	- the battery life is excellent ( i get 6 - 8 hours of normal university student usage out of it ) and even when i ' m using it , it charges as fast as my phone .	battery life	battery operation_performance	positive	battery operation_performance positive	yes	3	5
+61	however , other than video calls it does really well .	NULL	laptop general	positive	laptop general positive	yes	0	0
+62	- the spacebar is finicky .	spacebar	keyboard design_features	negative	keyboard design_features negative	yes	3	4
+63	the chromebook has instant connection and a hugely impressive 8 - hour battery life when left on .	chromebook	laptop connectivity	positive	laptop connectivity positive	yes	2	3
+63	the chromebook has instant connection and a hugely impressive 8 - hour battery life when left on .	battery life	battery operation_performance	positive	battery operation_performance positive	yes	13	15
+64	i just got it today and i love it !	NULL	laptop general	positive	laptop general positive	yes	0	0
+65	if you are in the google echo system , then this is great .	google echo system	software general	positive	software general positive	yes	6	9
+66	works great !	NULL	laptop general	positive	laptop general positive	yes	0	0
+67	he loves it .	NULL	laptop general	positive	laptop general positive	yes	0	0
+68	a great chromebook at a very reasonable price , includes the google play store .	chromebook	laptop general	positive	laptop general positive	yes	3	4
+68	a great chromebook at a very reasonable price , includes the google play store .	chromebook	laptop price	positive	laptop price positive	yes	3	4
+69	that being said , my son loves it .	NULL	laptop general	positive	laptop general positive	yes	0	0
+70	this is a functional laptop , perfect for work and casual internet browsing .	laptop	laptop operation_performance	positive	laptop operation_performance positive	yes	5	6
+71	great computer and great value , our second chromebook and first one still doing fine just needed another for family .	computer	laptop general	positive	laptop general positive	yes	2	3
+72	i wanted an inexpensive chromebook and this fit the bill .	chromebook	laptop price	positive	laptop price positive	yes	5	6
+73	set up is take out of box and open cover .	set up	laptop usability	positive	laptop usability positive	yes	1	3
+74	works great .	NULL	laptop operation_performance	positive	laptop operation_performance positive	yes	0	0
+75	i loved mine , so i got her the same one .	NULL	laptop general	positive	laptop general positive	yes	0	0
+76	can ' t really find a viewing angle where all of it looks right at the same time .	NULL	display operation_performance	negative	display operation_performance negative	yes	0	0
+77	very easy to set up .	set up	laptop usability	positive	laptop usability positive	yes	4	6
+78	the chromebook was packaged well and we saw no defects ( ours was used ) .	chromebook	shipping quality	positive	shipping quality positive	yes	2	3
+79	it is a basic little laptop and i love it .	laptop	laptop general	positive	laptop general positive	yes	6	7
+80	the battery life is incredible and literally lasts all day , not to mention it charges to 100 % in about an hour and a half .	battery life	battery operation_performance	positive	battery operation_performance positive	yes	2	4
+80	the battery life is incredible and literally lasts all day , not to mention it charges to 100 % in about an hour and a half .	battery life	power_supply operation_performance	positive	power_supply operation_performance positive	yes	2	4
+81	linux is a fairly light os depending on the distro you use .	linux	os design_features	positive	os design_features positive	yes	1	2
+81	linux is a fairly light os depending on the distro you use .	os	os design_features	positive	os design_features positive	yes	6	7
+82	there is a lot of ' bang for your buck ' in the lenovo ideapad 320 .	lenovo ideapad 320	laptop general	positive	laptop general positive	yes	14	17
+83	low rpm hdd .	hdd	hard_disc operation_performance	negative	hard_disc operation_performance negative	yes	3	4
+84	my only fair complaint is that it occasionally restarts itself without warning ( usually no more than once every day or two ) .	NULL	laptop operation_performance	negative	laptop operation_performance negative	yes	0	0
+85	excellent laptop good speed on uploads and download .	laptop	laptop general	positive	laptop general positive	yes	2	3
+85	excellent laptop good speed on uploads and download .	laptop	laptop operation_performance	positive	laptop operation_performance positive	yes	2	3
+86	love the screen resolution .	screen resolution	display operation_performance	positive	display operation_performance positive	yes	3	5
+87	a good product !	product	laptop general	positive	laptop general positive	yes	3	4
+88	thanks for the good quality !	NULL	laptop quality	positive	laptop quality positive	yes	0	0
+89	light thin best price power laptop	laptop	laptop design_features	positive	laptop design_features positive	yes	6	7
+89	light thin best price power laptop	laptop	laptop price	positive	laptop price positive	yes	6	7
+90	love this so much !	NULL	laptop general	positive	laptop general positive	yes	0	0
+91	at a ` ` black friday ` ` price , this computers specs could not be beat for the value to dollar performance ratio .	computers specs	laptop price	positive	laptop price positive	yes	12	14
+92	overall , this was a good buy and i still love my purchase nonetheless .	NULL	laptop general	positive	laptop general positive	yes	0	0
+93	i ' m using it mainly to store movies , and the 1 tb drive is nice .	drive	hard_disc general	positive	hard_disc general positive	yes	15	16
+94	nice keyboard .	keyboard	keyboard general	positive	keyboard general positive	yes	2	3
+95	i have always loved loved the kindles .	kindles	laptop general	positive	laptop general positive	yes	7	8
+96	my only complaint is that the mouse keypad is a little big .	mouse keypad	mouse design_features	negative	mouse design_features negative	yes	7	9
+97	so , i have had this laptop for almost a week and have put it through the ringer .	laptop	laptop general	neutral	laptop general neutral	yes	7	8
+98	only thing i really didn ' t like about this was how quickly the battery drained .	battery	battery operation_performance	negative	battery operation_performance negative	yes	15	16
+99	i have n ' t used it much for gaming but i imagine it works fine .	NULL	laptop operation_performance	positive	laptop operation_performance positive	yes	0	0
+100	my kids have played roblox and minecraft on it along with fortnite so i think it can handle online gaming pretty good .	NULL	laptop operation_performance	positive	laptop operation_performance positive	yes	0	0
+101	if you ' re big on aesthetics then you ' ll love the look .	look	laptop design_features	positive	laptop design_features positive	yes	14	15
+102	i will never use another microsoft program as long as i live .	microsoft program	software general	negative	software general negative	yes	6	8
+103	just a home pc laptop that works very well .	home pc laptop	laptop operation_performance	positive	laptop operation_performance positive	yes	3	6
+104	it has a full size keyboard , a number pad , a camera , and great big screen !	keyboard	keyboard design_features	positive	keyboard design_features positive	yes	6	7
+104	it has a full size keyboard , a number pad , a camera , and great big screen !	number pad	keyboard design_features	positive	keyboard design_features positive	yes	9	11
+104	it has a full size keyboard , a number pad , a camera , and great big screen !	camera	keyboard design_features	neutral	keyboard design_features neutral	yes	13	14
+104	it has a full size keyboard , a number pad , a camera , and great big screen !	screen	display design_features	positive	display design_features positive	yes	18	19
+105	this is just perfect .	NULL	laptop general	positive	laptop general positive	yes	0	0
+106	very happy with this laptop although not a fan of windows 10 .	laptop	laptop general	positive	laptop general positive	yes	5	6
+106	very happy with this laptop although not a fan of windows 10 .	windows 10	os general	negative	os general negative	yes	11	13
+107	navigates well .	navigates	out_of_scope general	positive	out_of_scope general positive	yes	1	2
+108	using it for doing programming , app development , and electronics projects .	NULL	laptop general	neutral	laptop general neutral	yes	0	0
+109	so far i ' m enjoying it .	NULL	laptop general	positive	laptop general positive	yes	0	0
+110	it is very good for the price .	NULL	laptop price	positive	laptop price positive	yes	0	0
+111	but , until that time , this review stands as : do not buy if your care about the display ' s life .	display ' s life	display general	negative	display general negative	yes	20	24
+112	so android is fun for tablet features , but its like embedding an android inside , without letting android apps out to utilize the full abilities of the chromium system .	android	os general	positive	os general positive	yes	2	3
+112	so android is fun for tablet features , but its like embedding an android inside , without letting android apps out to utilize the full abilities of the chromium system .	android	os general	negative	os general negative	yes	2	3
+113	google is expecting to add that in sometime in the next year .	google	company general	neutral	company general neutral	yes	1	2
+114	i was skeptical ordering this because of the conflicting reviews .	NULL	laptop general	negative	laptop general negative	yes	0	0
+115	it keep going off on sleep mode without any way to wake it up .	NULL	laptop operation_performance	negative	laptop operation_performance negative	yes	0	0
+116	which is really sad because in the time i could actually use the chromebook i absolutely loved it .	chromebook	laptop general	positive	laptop general positive	yes	14	15
+116	which is really sad because in the time i could actually use the chromebook i absolutely loved it .	chromebook	laptop general	negative	laptop general negative	yes	14	15
+117	i tried it , and it is very limited for the current price of $ 550 .	NULL	laptop operation_performance	negative	laptop operation_performance negative	yes	0	0
+118	many apps aren ' t ` ` compatible ` ` and even the ones that work , they look awful .	apps	software operation_performance	negative	software operation_performance negative	yes	2	3
+119	another expensive & poorly executed samsung product .	samsung product	laptop price	negative	laptop price negative	yes	6	8
+119	another expensive & poorly executed samsung product .	samsung product	laptop operation_performance	negative	laptop operation_performance negative	yes	6	8
+120	thankfully , this time , acer has gotten that part right .	acer	company general	positive	company general positive	yes	6	7
+121	things are less clear here ; the toshiba again has better performance , and uses a real ssd , but it has less impressive build quality and even less impressive materials ; it does offer a backlit keyboard and an even nicer screen , still the nicest of these three .	toshiba	laptop operation_performance	positive	laptop operation_performance positive	yes	8	9
+121	things are less clear here ; the toshiba again has better performance , and uses a real ssd , but it has less impressive build quality and even less impressive materials ; it does offer a backlit keyboard and an even nicer screen , still the nicest of these three .	build quality	laptop quality	negative	laptop quality negative	yes	25	27
+121	things are less clear here ; the toshiba again has better performance , and uses a real ssd , but it has less impressive build quality and even less impressive materials ; it does offer a backlit keyboard and an even nicer screen , still the nicest of these three .	screen	display general	positive	display general positive	yes	43	44
+122	i only mention this because , in my opinion , you ' re getting about $ 300 worth of performance here ; anyone telling you this device runs like a $ 500 or $ 800 computer is exaggerating .	device	laptop price	negative	laptop price negative	yes	27	28
+123	for home users , these cheap machines fit many use cases from casual browsing and two - screening , to watching videos and calling family .	machines	laptop price	positive	laptop price positive	yes	7	8
+123	for home users , these cheap machines fit many use cases from casual browsing and two - screening , to watching videos and calling family .	machines	laptop operation_performance	positive	laptop operation_performance positive	yes	7	8
+124	as a 5 - year chromebook veteran , i ' ve been waiting for this machine .	machine	laptop general	positive	laptop general positive	yes	16	17
+125	the processor on this chromebook is one of the best you can get on a chromebook at this price ( i did plenty of research ) , but you start to notice a lag when you have more than 3 browsers open at once .	processor	cpu price	positive	cpu price positive	yes	2	3
+125	the processor on this chromebook is one of the best you can get on a chromebook at this price ( i did plenty of research ) , but you start to notice a lag when you have more than 3 browsers open at once .	processor	cpu operation_performance	negative	cpu operation_performance negative	yes	2	3
+126	but , honesty , for the intended use case of a budget chromebook ( youtube , bill paying , amazon prime watching machine ) this difference is negligible .	chromebook	laptop quality	neutral	laptop quality neutral	yes	13	14
+127	i also don ' t want the power cord draped down the right side and annoying me .	power cord	power_supply design_features	negative	power_supply design_features negative	yes	8	10
+128	i was pleasantly surprised at how good it is .	NULL	laptop general	positive	laptop general positive	yes	0	0
+129	as a windows and mac user , i wasn ' t sure if i could benefit from using chromeos , but i find myself using it more than i anticipated .	NULL	os general	positive	os general positive	yes	0	0
+130	i was extremely hesitant to buy a used macbook pro ( it ' s still a lot of money ) but so far am surprisingly pleased with it .	macbook pro	laptop general	neutral	laptop general neutral	yes	9	11
+130	i was extremely hesitant to buy a used macbook pro ( it ' s still a lot of money ) but so far am surprisingly pleased with it .	macbook pro	laptop general	positive	laptop general positive	yes	9	11
+131	- new ports that were not in the 2011 model : hdmi port , extra thunderbolt video port ( now it has two instead of one )	ports	ports general	positive	ports general positive	yes	3	4
+132	i had the chance to test the new radeon graphics card and it ' s really good .	radeon graphics card	graphics general	positive	graphics general positive	yes	9	12
+133	honestly , i think nobody uses these ports anyway .	ports	ports general	neutral	ports general neutral	yes	8	9
+134	maybe that ' s a consequence of how the retina display is built , but yeah , it ' s harder to keep the screen clean .	screen	display general	negative	display general negative	yes	25	26
+135	i do wish the screen were bigger , but i had to go with the 13 ` ` due to budget constraints , so that ' s on me .	screen	display general	neutral	display general neutral	yes	5	6
+136	these macbook pro computers are expensive .	macbook pro computers	laptop price	negative	laptop price negative	yes	2	5
+137	i think for others they are just buying into the brand .	brand	company general	neutral	company general neutral	yes	11	12
+138	i love the retina display .	retina display	display general	positive	display general positive	yes	4	6
+139	i am extremely happy with this laptop .	laptop	laptop general	positive	laptop general positive	yes	7	8
+140	it doesn ' t effect any of the functionality , but it was a little disappointing to open the box to see a dent on something i ' d just spend $ 1 , 000 on .	dent	laptop general	negative	laptop general negative	yes	24	25
+141	it worked perfectly right out of the box .	NULL	laptop operation_performance	positive	laptop operation_performance positive	yes	0	0
+142	great product !	product	laptop general	positive	laptop general positive	yes	2	3
+143	battery issues aside , i really love this laptop and it is easily the nicest piece of electronics i have ever owned .	battery	battery general	negative	battery general negative	yes	1	2
+143	battery issues aside , i really love this laptop and it is easily the nicest piece of electronics i have ever owned .	laptop	laptop general	positive	laptop general positive	yes	9	10
+144	neat and sleek build , great display and very nice os	build	laptop design_features	positive	laptop design_features positive	yes	4	5
+144	neat and sleek build , great display and very nice os	display	display general	positive	display general positive	yes	7	8
+144	neat and sleek build , great display and very nice os	os	os general	positive	os general positive	yes	11	12
+145	the new touchpad takes a little getting used to , but otherwise it ' s been perfect .	touchpad	keyboard general	neutral	keyboard general neutral	yes	3	4
+145	the new touchpad takes a little getting used to , but otherwise it ' s been perfect .	NULL	laptop general	positive	laptop general positive	yes	0	0
+146	the retina screen is amazing .	retina screen	display operation_performance	positive	display operation_performance positive	yes	2	4
+147	less of a fault of the much lauded diving board and more a factor of the very well designed new hardware .	hardware	hardware design_features	positive	hardware design_features positive	yes	21	22
+148	not to mention , the touchbar is just another gimmicky addition to the ` ` future of apple ` ` ( really not as effective as one would think ) .	touchbar	keyboard general	positive	keyboard general positive	yes	6	7
+149	a great computer !	computer	laptop general	positive	laptop general positive	yes	3	4
+150	battery life is a huge plus !	battery life	battery operation_performance	positive	battery operation_performance positive	yes	1	3
+151	such a nice mac	mac	laptop general	positive	laptop general positive	yes	4	5
+152	price was very good and met my expectations also shipping was very quick .	NULL	laptop price	positive	laptop price positive	yes	0	0
+152	price was very good and met my expectations also shipping was very quick .	shipping	shipping general	positive	shipping general positive	yes	10	11
+153	however , i have to remove one star for the very unreliable magnetic charging connector .	charging connector	power_supply design_features	negative	power_supply design_features negative	yes	14	16
+154	my first mac is awesome !	mac	laptop general	positive	laptop general positive	yes	3	4
+155	it arrived on time and in excellent condition and my hubby has been happily using it now for several weeks with no problems .	NULL	shipping general	positive	shipping general positive	yes	0	0
+155	it arrived on time and in excellent condition and my hubby has been happily using it now for several weeks with no problems .	NULL	laptop general	positive	laptop general positive	yes	0	0
+156	this laptop has all the necessary ports .	laptop	laptop design_features	positive	laptop design_features positive	yes	2	3
+157	as i bought 13 inch model , it is very portable .	model	laptop portability	positive	laptop portability positive	yes	6	7
+158	i ' ve been extremely impressed by this device .	device	laptop general	positive	laptop general positive	yes	9	10
+159	overall : i ' m super happy with this product .	product	laptop general	positive	laptop general positive	yes	10	11
+160	it feels responsive to me , and i went to settings to customize the speed , clicking , and scrolling .	NULL	hardware operation_performance	positive	hardware operation_performance positive	yes	0	0
+161	the only drawback is that it only comes with 32 gb of hard drive .	hard drive	hard_disc design_features	negative	hard_disc design_features negative	yes	13	15
+162	configuring the printer was a little tricky but not bad .	printer	multimedia_devices operation_performance	neutral	multimedia_devices operation_performance neutral	yes	3	4
+163	my desktop runs all my video editing software for my bigger and most demanding projects and mylaptop is great for editing video and running pc games in places other than my home ( like school ! )	mylaptop	laptop miscellaneous	positive	laptop miscellaneous positive	yes	17	18
+164	either they were so slow i couldn ' t get any work done or they just flat out broke after a couple months .	NULL	laptop operation_performance	negative	laptop operation_performance negative	yes	0	0
+165	this is where the r11 gets interesting .	r11	laptop usability	positive	laptop usability positive	yes	5	6
+166	i have not had any freezing or screen flashing issues .	screen	display operation_performance	positive	display operation_performance positive	yes	8	9
+167	i guess i got one of the good ones as i have had no trouble at all .	NULL	laptop general	positive	laptop general positive	yes	0	0
+168	did i mention , i can access all my word , excel , and powerpoint files using the google apps .	google apps	software usability	positive	software usability positive	yes	19	21
+169	i have had it about 4 days and have been checking out how well it runs my favorite android apps .	NULL	laptop operation_performance	positive	laptop operation_performance positive	yes	0	0
+169	i have had it about 4 days and have been checking out how well it runs my favorite android apps .	android apps	software operation_performance	positive	software operation_performance positive	yes	19	21
+170	unfortunately , this particular computer is 100 % unusable after only 2 years and 2 weeks .	computer	laptop usability	negative	laptop usability negative	yes	5	6
+171	it is a timeless design and a very respectable screen .	design	laptop design_features	positive	laptop design_features positive	yes	5	6
+171	it is a timeless design and a very respectable screen .	screen	display general	positive	display general positive	yes	10	11
+172	i ' m disappointed with macbook pro 15 ” because sometimes charger macbook pro 15 ” running overheating !	NULL	laptop general	negative	laptop general negative	yes	0	0
+172	i ' m disappointed with macbook pro 15 ” because sometimes charger macbook pro 15 ” running overheating !	NULL	power_supply operation_performance	negative	power_supply operation_performance negative	yes	0	0
+173	apple has always priced their hardware high , but you could always make an argument for the style , nice hardware and the unique osx experience .	hardware	company price	negative	company price negative	yes	21	22
+173	apple has always priced their hardware high , but you could always make an argument for the style , nice hardware and the unique osx experience .	NULL	laptop design_features	positive	laptop design_features positive	yes	0	0
+173	apple has always priced their hardware high , but you could always make an argument for the style , nice hardware and the unique osx experience .	NULL	hardware general	positive	hardware general positive	yes	0	0
+173	apple has always priced their hardware high , but you could always make an argument for the style , nice hardware and the unique osx experience .	osx	os general	positive	os general positive	yes	25	26
+174	* extremely weak graphics card .	graphics card	graphics operation_performance	negative	graphics operation_performance negative	yes	4	6
+175	the intel iris sucks .	intel iris	hard_disc operation_performance	negative	hard_disc operation_performance negative	yes	2	4
+176	i can ' t use my printer because it ' s not supported .	printer	ports usability	negative	ports usability negative	yes	7	8
+177	usb port go dead until i do a restart .	usb port	ports operation_performance	negative	ports operation_performance negative	yes	1	3
+178	now i ' m just down to some gripes that are probably here to stay : the bluetooth on this thing is really fussy , the non - functional video output ( using usb - c video out through an hdmi cable sends just a blank desktop background and no audio , even if i am playing a movie or youtube visibly on the c302 screen ) , and that it can ' t hold a vpn connection without dropping it every 20 - 30 minutes .	bluetooth	hardware operation_performance	negative	hardware operation_performance negative	yes	18	19
+178	now i ' m just down to some gripes that are probably here to stay : the bluetooth on this thing is really fussy , the non - functional video output ( using usb - c video out through an hdmi cable sends just a blank desktop background and no audio , even if i am playing a movie or youtube visibly on the c302 screen ) , and that it can ' t hold a vpn connection without dropping it every 20 - 30 minutes .	NULL	laptop connectivity	negative	laptop connectivity negative	yes	0	0
+179	sometimes they felt a bit half - baked , but i loved the idea , and the keyboard made a world of difference in what you could do with that tablet .	NULL	laptop general	positive	laptop general positive	yes	0	0
+179	sometimes they felt a bit half - baked , but i loved the idea , and the keyboard made a world of difference in what you could do with that tablet .	keyboard	keyboard general	positive	keyboard general positive	yes	18	19
+180	- good screen .	screen	display general	positive	display general positive	yes	3	4
+181	this seems to be a somewhat common issue with chromebooks but this asus model doesn ' t have a way to preform an external reset , which is a big problem if you ' ve setup any personal info on it and it has to be sent back .	asus model	laptop general	negative	laptop general negative	yes	13	15
+182	the funny part is that the customer service people have been great but they have no control to take care of problems .	customer service	support general	positive	support general positive	yes	7	9
+183	all metal body , very slim form factor , and has a pretty decent touchscreen .	factor	laptop design_features	positive	laptop design_features positive	yes	8	9
+183	all metal body , very slim form factor , and has a pretty decent touchscreen .	touchscreen	display general	positive	display general positive	yes	15	16
+184	as others have already reported , the headphone jack produces extremely weak volume , even at max .	headphone jack	multimedia_devices operation_performance	negative	multimedia_devices operation_performance negative	yes	8	10
+185	anyhow , within a week , the speakers started crackling annoyingly when watching videos , or playing games .	speakers	multimedia_devices operation_performance	negative	multimedia_devices operation_performance negative	yes	8	9
+186	unlike other asus laptops i ' ve tried , this unit won the display roulette .	unit	laptop design_features	positive	laptop design_features positive	yes	11	12
+187	the native chrome os media player would play the files from the drive but had very limited playback capabilities , i could not get it to ` ` play all ` ` , only repeat one , suffice to say i was frustrated at that point and did not feel like googling how to make a media player do what others ` ` just do ` ` .	native chrome os media player	software operation_performance	negative	software operation_performance negative	yes	2	7
+188	i like the security built in .	NULL	software general	positive	software general positive	yes	0	0
+189	if i had it to do over , i would not purchase this computer .	computer	laptop general	negative	laptop general negative	yes	14	15
+190	the first issue is that the speakers are on either side of the computer , and you can barely hear them on max volume .	speakers	multimedia_devices design_features	negative	multimedia_devices design_features negative	yes	7	8
+191	it also had charging problems and got terrible warranty support .	NULL	power_supply general	negative	power_supply general negative	yes	0	0
+191	it also had charging problems and got terrible warranty support .	warranty support	warranty general	negative	warranty general negative	yes	9	11
+192	i got the same failure to charge issue that others have reported .	charge	power_supply general	negative	power_supply general negative	yes	7	8
+193	if bluetooth devices worked with this chromebook it would get 5 stars , but this is the least reliable device in regards to bluetooth i have ever owned .	chromebook	laptop general	positive	laptop general positive	yes	7	8
+194	i feel like i bought a decent machine but it ' s unable to handle the ram workload .	machine	laptop general	positive	laptop general positive	yes	8	9
+194	i feel like i bought a decent machine but it ' s unable to handle the ram workload .	machine	laptop operation_performance	negative	laptop operation_performance negative	yes	8	9
+195	i don ' t think that i was adequately prepared for how dark the screen is at its highest brightness in comparison to other devices .	screen	display design_features	negative	display design_features negative	yes	15	16
+196	don ' t get me wrong , the device flips back and forth very well .	device	laptop design_features	positive	laptop design_features positive	yes	9	10
+197	was initially impressed by design but after normal use without any rough handling or dropping of the chromebook , the metal corner tip covering the lcd peels off & warps / bends upwards !	metal corner tip	hardware quality	negative	hardware quality negative	yes	21	24
+198	to say i ' m disappointed in this chromebook would be an understatement .	chromebook	laptop general	negative	laptop general negative	yes	9	10
+199	this computer is really hard to use .	computer	laptop usability	negative	laptop usability negative	yes	2	3
+200	it ' s their policy to only repair not replace .	policy	support quality	negative	support quality negative	yes	5	6
+201	+ comfortable keyboard	keyboard	keyboard design_features	positive	keyboard design_features positive	yes	3	4
+202	other than this , it ' s a decent product .	product	laptop general	positive	laptop general positive	yes	10	11
+203	decent enough build , but the mouse pad is terrible .	build	laptop design_features	positive	laptop design_features positive	yes	3	4
+203	decent enough build , but the mouse pad is terrible .	mouse pad	keyboard general	negative	keyboard general negative	yes	7	9
+204	games / video apps perform absolutely awfully .	games / video apps	software operation_performance	negative	software operation_performance negative	yes	1	5
+205	the machine ' s visible design itself was fine .	machine	laptop design_features	positive	laptop design_features positive	yes	2	3
+206	after one charge , the battery would not take charge .	battery	battery operation_performance	negative	battery operation_performance negative	yes	6	7
+207	it will not power on anymore after 2 mos of daily use - 4 hours per day .	NULL	laptop operation_performance	negative	laptop operation_performance negative	yes	0	0
+208	i went through two of them , both came with sharp edges that made them dangerous and uncomfortable to use .	NULL	laptop design_features	negative	laptop design_features negative	yes	0	0
+209	i really liked it when i first got it , it performs very well and the software is very easy to use .	NULL	laptop operation_performance	positive	laptop operation_performance positive	yes	0	0
+209	i really liked it when i first got it , it performs very well and the software is very easy to use .	software	software usability	positive	software usability positive	yes	17	18
+210	using wifi the signal seems to drop , not sure if the wifi adapter needs an update but there are issues .	wifi	out_of_scope operation_performance	negative	out_of_scope operation_performance negative	yes	2	3
+210	using wifi the signal seems to drop , not sure if the wifi adapter needs an update but there are issues .	wifi adapter	software operation_performance	negative	software operation_performance negative	yes	13	15
+211	first , the factory default driver configuration of this thing is unstable , which makes installing a correct configuration more difficult .	factory default driver	software operation_performance	negative	software operation_performance negative	yes	4	7
+212	the mouse pad is very touchy , but i use a separate bluetooth mouse anyways .	mouse pad	hardware operation_performance	neutral	hardware operation_performance neutral	yes	2	4
+213	i didn ' t even call for tech help because a brand new laptop should not be giving me such a headache .	brand new laptop	laptop general	negative	laptop general negative	yes	12	15
+214	the laptop its - self is great and is made of good build quality .	laptop	laptop general	positive	laptop general positive	yes	2	3
+214	the laptop its - self is great and is made of good build quality .	build quality	laptop quality	positive	laptop quality positive	yes	13	15
+215	beautiful screen .	screen	display general	positive	display general positive	yes	2	3
+216	monitor screen is ok , sometimes the contrast is poor but looks better in games .	monitor screen	display operation_performance	neutral	display operation_performance neutral	yes	1	3
+216	monitor screen is ok , sometimes the contrast is poor but looks better in games .	contrast	display operation_performance	negative	display operation_performance negative	yes	8	9
+216	monitor screen is ok , sometimes the contrast is poor but looks better in games .	contrast	display operation_performance	positive	display operation_performance positive	yes	8	9
+217	the laptop now does n ' t even function without needing a full factory reset every 3 hours .	NULL	laptop operation_performance	negative	laptop operation_performance negative	yes	0	0
+218	if i had it to do over again , i would not buy this pc .	pc	laptop general	negative	laptop general negative	yes	15	16
+219	i would * not * recommend this laptop .	laptop	laptop general	negative	laptop general negative	yes	8	9
+220	this is the absolute worst laptop i have ever owned .	laptop	laptop general	negative	laptop general negative	yes	6	7
+221	now , i have been stressed with fixing this laptop since every day has been something new that i need to fix with it .	laptop	laptop operation_performance	negative	laptop operation_performance negative	yes	10	11
+222	the overall material the laptop is made of feels incredibly cheap .	overall material the laptop	laptop design_features	negative	laptop design_features negative	yes	2	6
+223	don ' t waste your money on this computer , it will disapoint you in every way possible .	computer	laptop general	negative	laptop general negative	yes	9	10
+224	the laptop was dead on arrival .	laptop	laptop general	negative	laptop general negative	yes	2	3
+225	it is not a very stable build at all .	NULL	laptop design_features	negative	laptop design_features negative	yes	0	0
+226	i have had this laptop two months now and it has crashed as many times .	laptop	laptop operation_performance	negative	laptop operation_performance negative	yes	5	6
+227	this is the worst laptop i have ever bought in my entire life .	laptop	laptop general	negative	laptop general negative	yes	5	6
+228	this laptop is small and thin for a 15 .	laptop	laptop design_features	positive	laptop design_features positive	yes	2	3
+229	- keyboard is not that good , i fell that there is uneven uniformity in the button press and travel , and definitely some flex .	keyboard	keyboard usability	negative	keyboard usability negative	yes	2	3
+230	battery life doesn ' t seem to be more than 5 hours , but i expected that going in .	battery life	battery quality	neutral	battery quality neutral	yes	1	3
+231	battery charger is super tiny and lightweight , which is an additional advantage vs the 1 lb brick that you have to lug around with the ux501vw .	battery charger	power_supply design_features	positive	power_supply design_features positive	yes	1	3
+232	i just opened it earlier today and my initial impressions is that it is very attractive and very sturdy feeling and i love the screen which non reflective , it ' s very nice not looking into a reflective glossy screen for a change .	NULL	laptop general	positive	laptop general positive	yes	0	0
+233	most of the laptop is actually very good , but is held back by a 5400 rpm hdd .	laptop	laptop general	positive	laptop general positive	yes	4	5
+233	most of the laptop is actually very good , but is held back by a 5400 rpm hdd .	5400 rpm hdd	hard_disc general	positive	hard_disc general positive	yes	16	19
+234	other than that its components are actually very good .	components	laptop general	positive	laptop general positive	yes	5	6
+235	disadvantage of amazon seller , it was delivered to my usps not my home .	amazon seller	shipping quality	negative	shipping quality negative	yes	3	5
+236	the screen looks amazing , ips it seems .	screen	display design_features	positive	display design_features positive	yes	2	3
+237	loving the laptop .	laptop	laptop general	positive	laptop general positive	yes	3	4
+238	it ' s light weight , sleek , the screen resolution is great and it runs very well for everyday use .	NULL	laptop design_features	positive	laptop design_features positive	yes	0	0
+238	it ' s light weight , sleek , the screen resolution is great and it runs very well for everyday use .	screen resolution	display general	positive	display general positive	yes	10	12
+238	it ' s light weight , sleek , the screen resolution is great and it runs very well for everyday use .	NULL	laptop operation_performance	positive	laptop operation_performance positive	yes	0	0
+239	it charges very fast ; from near dead to full in less than an hour .	NULL	power_supply operation_performance	positive	power_supply operation_performance positive	yes	0	0
+240	i got this laptop for school and it is simply amazing .	laptop	laptop general	positive	laptop general positive	yes	4	5
+241	moreover , the 8th gen i5 cpu is amazing .	8th gen i5 cpu	cpu general	positive	cpu general positive	yes	4	8
+242	this has been a very light convenient laptop for me .	laptop	laptop design_features	positive	laptop design_features positive	yes	8	9
+242	this has been a very light convenient laptop for me .	laptop	laptop usability	positive	laptop usability positive	yes	8	9
+243	i have no issues with using the internal hard drive , it works fast enough for me when loading up my software and music .	internal hard drive	hard_disc operation_performance	positive	hard_disc operation_performance positive	yes	8	11
+244	this little vivo had the speed / storage that we need , the materials feel substantial instead of cheap .	vivo	laptop general	positive	laptop general positive	yes	3	4
+244	this little vivo had the speed / storage that we need , the materials feel substantial instead of cheap .	materials	laptop quality	positive	laptop quality positive	yes	14	15
+245	i ' m not a computer nerd but for a joe punch clock this is nice	this	laptop general	positive	laptop general positive	yes	14	15
+246	on it ' s own , it performance great !	NULL	laptop operation_performance	positive	laptop operation_performance positive	yes	0	0
+247	love the form factor and the light weight as i often use my laptop while laying down .	my laptop	laptop design_features	positive	laptop design_features positive	yes	13	15
+248	opening it was a little hard but once opened , it ' s easy to add the ram or ssd .	NULL	laptop design_features	positive	laptop design_features positive	yes	0	0
+249	less than that , for me , the screen looks dull .	screen	display quality	negative	display quality negative	yes	9	10
+250	if you ' re mainly on youtube or reading stuff online , this chromebook functions well for that purpose .	chromebook	laptop operation_performance	positive	laptop operation_performance positive	yes	14	15
+251	the laptop was shipped in what looked like a new case but upon opening it , it appeared used and repackaged .	laptop	shipping quality	negative	shipping quality negative	yes	2	3
+252	freezes with red lines across it , froze five times the first afternoon .	NULL	laptop operation_performance	negative	laptop operation_performance negative	yes	0	0
+253	had problems with my acer chromebook from the very start .	acer chromebook	laptop operation_performance	negative	laptop operation_performance negative	yes	5	7
+254	every few weeks the system locks up and freezes .	system	os operation_performance	negative	os operation_performance negative	yes	5	6
+255	looks like the hdmi port may be defective or something - - another reviewer had a similar problem .	hdmi port	ports operation_performance	negative	ports operation_performance negative	yes	4	6
+256	before the review this package has nice presentation and solid build .	package	laptop design_features	positive	laptop design_features positive	yes	5	6
+256	before the review this package has nice presentation and solid build .	build	laptop quality	positive	laptop quality positive	yes	11	12
+257	( good ) as for the laptop ( when it worked , and i mean for the whole 30 minutes ) it was extremely fast .	laptop	laptop general	positive	laptop general positive	yes	7	8
+257	( good ) as for the laptop ( when it worked , and i mean for the whole 30 minutes ) it was extremely fast .	laptop	laptop operation_performance	positive	laptop operation_performance positive	yes	7	8
+258	adequate screen .	screen	display general	positive	display general positive	yes	2	3
+259	it ` ` feels ` ` solid .	NULL	laptop quality	positive	laptop quality positive	yes	0	0
+260	the product looks reasonable at this price range .	product	laptop price	positive	laptop price positive	yes	2	3
+261	i ' ve only had the computer for a little over a month , that is annoying on many levels .	computer	laptop general	negative	laptop general negative	yes	7	8
+262	the manufacturer was not helpful in trying to resolve this issue .	manufacturer	support general	negative	support general negative	yes	2	3
+263	having ram problems after 1 .	ram	hard_disc general	negative	hard_disc general negative	yes	2	3
+264	i ' ve been able to play fortnite on this laptop , medium settings , with no issues or lag / stutter .	laptop	laptop operation_performance	neutral	laptop operation_performance neutral	yes	11	12
+265	unfortunately i was never able to complete this task , because after booting the laptop it suddenly shut - off on me and wouldn ' t turn back on again .	laptop	laptop operation_performance	negative	laptop operation_performance negative	yes	15	16
+266	the wall power adapter charger is not working and then later caught fire .	wall power adapter charger	power_supply operation_performance	negative	power_supply operation_performance negative	yes	2	6
+267	i ' m extremely disappointed with the performance of this laptop .	laptop	laptop operation_performance	negative	laptop operation_performance negative	yes	11	12
+268	there are several traps inside and outside of laptop .	laptop	laptop general	negative	laptop general negative	yes	9	10
+269	keyboard is not good .	keyboard	keyboard general	negative	keyboard general negative	yes	1	2
+270	- sleek and nice texture on lid	lid	laptop design_features	positive	laptop design_features positive	yes	7	8
+271	one of the keys is especially flimsy and feels like it could break at any moment .	one of the keys	keyboard quality	negative	keyboard quality negative	yes	1	5
+272	it gets what you need done .	NULL	laptop operation_performance	positive	laptop operation_performance positive	yes	0	0
+273	if you plan on buying this beware that your patience may run thin .	NULL	laptop general	negative	laptop general negative	yes	0	0
+274	machine is totally unusable during the update .	machine	laptop operation_performance	negative	laptop operation_performance negative	yes	1	2
+275	i received the item after 18 days of ordering .	item	shipping general	negative	shipping general negative	yes	4	5
+276	gamers , do not fool yourself with the fancy ` ` intel i5 , 8th generation ` ` , nothing can fix an incompetent hard drive , that 8gb ram is worth nothing .	intel i5	cpu general	positive	cpu general positive	yes	12	14
+276	gamers , do not fool yourself with the fancy ` ` intel i5 , 8th generation ` ` , nothing can fix an incompetent hard drive , that 8gb ram is worth nothing .	hard drive	hard_disc operation_performance	negative	hard_disc operation_performance negative	yes	25	27
+276	gamers , do not fool yourself with the fancy ` ` intel i5 , 8th generation ` ` , nothing can fix an incompetent hard drive , that 8gb ram is worth nothing .	ram	memory general	negative	memory general negative	yes	30	31
+277	asus has really set a new standard with the c302ca ' s internals and physical design .	asus	company design_features	positive	company design_features positive	yes	1	2
+277	asus has really set a new standard with the c302ca ' s internals and physical design .	c302ca ' s internals	laptop design_features	positive	laptop design_features positive	yes	10	14
+277	asus has really set a new standard with the c302ca ' s internals and physical design .	physical design	laptop design_features	positive	laptop design_features positive	yes	15	17
+278	similarly the task tray area of the main task bar is on the small side and lends itself to fat - fingering .	task tray area	software design_features	negative	software design_features negative	yes	3	6
+279	one of the features of chromeos that i find very convenient is the way in which all of your configuration settings are stored in the cloud with your gmail account .	chromeos	os design_features	positive	os design_features positive	yes	6	7
+280	a big part of this device is its gorgeous aesthetic .	device	laptop design_features	positive	laptop design_features positive	yes	6	7
+281	this is a great device and the $ 450 asking price seems fair .	device	laptop general	positive	laptop general positive	yes	5	6
+281	this is a great device and the $ 450 asking price seems fair .	device	laptop price	neutral	laptop price neutral	yes	5	6
+282	this computer was 10 fold what i had expected .	computer	laptop general	positive	laptop general positive	yes	2	3
+283	i ' m usually peaked with ram ( ~ 95 % ) which is good because it ' s better used than not used .	ram	memory operation_performance	positive	memory operation_performance positive	yes	7	8
+284	but it is a bit big and heavy .	NULL	laptop design_features	negative	laptop design_features negative	yes	0	0
+285	quality is excellent so far , and the software / hardware combination works like they were made for each other ( which is what you want : ) )	quality	laptop quality	positive	laptop quality positive	yes	1	2
+285	quality is excellent so far , and the software / hardware combination works like they were made for each other ( which is what you want : ) )	software	software operation_performance	positive	software operation_performance positive	yes	9	10
+285	quality is excellent so far , and the software / hardware combination works like they were made for each other ( which is what you want : ) )	hardware	hardware operation_performance	positive	hardware operation_performance positive	yes	11	12
+286	after a week of use , i can safely say it is the most impressive chromebook i have used to - date .	chromebook	laptop general	positive	laptop general positive	yes	16	17
+287	at the moment , it is everything it was advertised to be .	NULL	laptop general	positive	laptop general positive	yes	0	0
+288	the screen is really amazing and you can easily change it to 1080p with no issues ( it ' s set lower out of the box ) .	screen	display general	positive	display general positive	yes	2	3
+289	it ' s sturdy , and looks and feels great .	NULL	laptop design_features	positive	laptop design_features positive	yes	0	0
+290	update : the c302 now supports google play store services on the stable channel .	c302	support general	neutral	support general neutral	yes	4	5
+291	love this chromebook !	chromebook	laptop general	positive	laptop general positive	yes	3	4
+292	the screen is plenty bright , and the sound from the speakers is fine for a laptop ( you won ' t be filling a room with sound ) .	sound	multimedia_devices operation_performance	positive	multimedia_devices operation_performance positive	yes	28	29
+292	the screen is plenty bright , and the sound from the speakers is fine for a laptop ( you won ' t be filling a room with sound ) .	speakers	multimedia_devices operation_performance	positive	multimedia_devices operation_performance positive	yes	12	13
+293	love the backlit keyboard .	backlit keyboard	keyboard general	positive	keyboard general positive	yes	3	5
+294	can get pretty warm running an intensive android app for a while .	android app	laptop quality	negative	laptop quality negative	yes	8	10
+295	at least the volume through bluetooth was tolerable .	volume through bluetooth	multimedia_devices operation_performance	neutral	multimedia_devices operation_performance neutral	yes	4	7
+296	this works great .	NULL	laptop operation_performance	positive	laptop operation_performance positive	yes	0	0
+297	after two years , or almost , the worst thing about this machine is lack of printer support .	machine	laptop design_features	negative	laptop design_features negative	yes	13	14
+298	setup was fast and easy , but then again i ' ve been a gmail / gcal / gdocs purist for a while now .	setup	laptop usability	positive	laptop usability positive	yes	1	2
+299	it has exceeded my expectations for performance , functionality and utility .	NULL	laptop operation_performance	positive	laptop operation_performance positive	yes	0	0
+300	in general , it has the look and feel of a premium laptop that is at home in any situation such as sitting down with a client .	laptop	laptop design_features	positive	laptop design_features positive	yes	13	14
+301	battery life is outstanding .	battery life	battery general	positive	battery general positive	yes	1	3
+302	this is my third chromebook and easily the best i ' ve encountered .	chromebook	laptop general	positive	laptop general positive	yes	5	6
+303	very expensive for what you get .	NULL	laptop price	negative	laptop price negative	yes	0	0
+304	it ' s lighter , good construction , chromebook works perfectly and downloaded 10 different apps i normally use for free .	NULL	laptop design_features	positive	laptop design_features positive	yes	0	0
+304	it ' s lighter , good construction , chromebook works perfectly and downloaded 10 different apps i normally use for free .	construction	laptop design_features	positive	laptop design_features positive	yes	7	8
+304	it ' s lighter , good construction , chromebook works perfectly and downloaded 10 different apps i normally use for free .	chromebook	laptop operation_performance	positive	laptop operation_performance positive	yes	9	10
+305	battery life is also solid .	battery life	battery operation_performance	positive	battery operation_performance positive	yes	1	3
+306	construction looks and feels great .	construction	laptop design_features	positive	laptop design_features positive	yes	1	2
+307	on the other hand my least favorite feature is the track pad .	track pad	hardware general	negative	hardware general negative	yes	11	13
+308	nice screen .	screen	display general	positive	display general positive	yes	2	3
+309	i am a mac person in every other way , but i love this chromebook !	chromebook	laptop general	positive	laptop general positive	yes	15	16
+310	easy set up , nice picture , responsive mouse pad , very lightweight , etc .	set up	laptop operation_performance	positive	laptop operation_performance positive	yes	2	4
+310	easy set up , nice picture , responsive mouse pad , very lightweight , etc .	mouse pad	keyboard operation_performance	positive	keyboard operation_performance positive	yes	9	11
+310	easy set up , nice picture , responsive mouse pad , very lightweight , etc .	NULL	laptop design_features	positive	laptop design_features positive	yes	0	0
+311	i love the keyboard , trackpad and screen .	keyboard	keyboard general	positive	keyboard general positive	yes	4	5
+311	i love the keyboard , trackpad and screen .	trackpad	keyboard general	positive	keyboard general positive	yes	6	7
+311	i love the keyboard , trackpad and screen .	screen	display general	positive	display general positive	yes	8	9
+312	the speakers are super clear and get loud enough , but obviously lack bass .	speakers	multimedia_devices operation_performance	positive	multimedia_devices operation_performance positive	yes	2	3
+312	the speakers are super clear and get loud enough , but obviously lack bass .	speakers	multimedia_devices operation_performance	negative	multimedia_devices operation_performance negative	yes	2	3
+313	the build quality seems very good .	build quality	laptop quality	positive	laptop quality positive	yes	2	4
+314	for ~ $ 400 , i ' m happy with this product after a couple months .	product	laptop general	positive	laptop general positive	yes	12	13
+315	it ' s fast and the screen is nice .	NULL	laptop operation_performance	positive	laptop operation_performance positive	yes	0	0
+315	it ' s fast and the screen is nice .	screen	display general	positive	display general positive	yes	7	8
+316	overall i like its slim design and feather light - weight alone with well equipped spec that can meet my daily work environment .	design	laptop design_features	positive	laptop design_features positive	yes	6	7
+316	overall i like its slim design and feather light - weight alone with well equipped spec that can meet my daily work environment .	spec	laptop design_features	positive	laptop design_features positive	yes	16	17
+317	i ' m four months into owning this lean , mean , little machine .	machine	laptop design_features	positive	laptop design_features positive	yes	14	15
+318	i ' ve already recommended or bought this for 4 others .	NULL	laptop general	positive	laptop general positive	yes	0	0
+319	the best laptop i have ever owned .	laptop	laptop general	positive	laptop general positive	yes	3	4
+320	this chromebook looks and feels great , performs even better and will soon support google play apps .	chromebook	laptop general	positive	laptop general positive	yes	2	3
+320	this chromebook looks and feels great , performs even better and will soon support google play apps .	chromebook	laptop operation_performance	positive	laptop operation_performance positive	yes	2	3
+321	it works perfectly and feels very tight but it is something i noticed .	NULL	laptop operation_performance	positive	laptop operation_performance positive	yes	0	0
+322	this is a very nice chromebook .	chromebook	laptop general	positive	laptop general positive	yes	6	7
+323	this is my second asus product , and i have been very happy with both .	asus product	laptop general	positive	laptop general positive	yes	5	7
+324	i loved the tablet transition to it .	tablet transition	laptop design_features	positive	laptop design_features positive	yes	4	6
+325	cons : no usb ports .	usb ports	ports design_features	negative	ports design_features negative	yes	4	6
