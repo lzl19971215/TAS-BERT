@@ -216,12 +216,12 @@ if __name__ == '__main__':
 		train_file = 'laptop_tas_train'
 		test_file = 'laptop_tas_test'
 	train_output = 'train_TAS'
-	test_output = 'test_TAS_full'
+	test_output = 'test_TAS'
 
 	# get set of aspect-sentiment
 	compose_set = get_aspect_sentiment_compose(args.dataset, train_file)
 
-	for input_file, output_file in zip([test_file], [test_output]):
+	for input_file, output_file in zip([train_file, test_file], [train_output, test_output]):
 		# get preprocessed data, TO labeling schema
 		n_sample_per_sentence = args.n_sample_per_sentence if 'test' not in input_file else -1
 		create_dataset_file(args.dataset, output_path, input_file, output_file, compose_set, n_sample_per_sentence=n_sample_per_sentence)

@@ -16,7 +16,7 @@ from torchcrf import CRF
 import torch.nn as nn
 from torch.nn import CrossEntropyLoss
 import numpy as np
-import tensorflow as tf
+# import tensorflow as tf
 import datetime
 
 
@@ -722,3 +722,128 @@ class BertForTABSAJoint_CRF_T(nn.Module):
 		return ner_loss, ner_predict
 
 
+
+class BertForTABSAJoint_BiLSTM_CRF(nn.Module):
+	def __init__(self, config, num_labels, num_ner_labels):
+		super(BertForTABSAJoint_BiLSTM_CRF, self).__init__()
+		self.bert = BertModel(config)
+		self.dropout = nn.Dropout(config.hidden_dropout_prob)
+		#添加NER部分单独的dropout，防止过拟合--------------------------------------------修改成功
+		self.dropoutNER = nn.Dropout(0.1)
+		#------------------------------------------------------------------------------修改成功
+		self.classifier = nn.Linear(config.hidden_size, num_labels) # num_labels is the type sum of 0 & 1
+		self.ner_hidden2tag = nn.Linear(config.hidden_size, num_ner_labels) # num_ner_labels is the type sum of ner labels: TO or BIO etc
+		self.num_labels = num_labels
+		self.num_ner_labels = num_ner_labels
+		# CRF
+		self.CRF_model = CRF(num_ner_labels, batch_first=True)
+		#初始dim=128，layer=1    最好结果为5层lstm，hidden_size=128，200效果不佳，原因可能是超过了潜在特征数量
+		# 在每层lstm间加入dropout=0.5
+		self.birnn = nn.LSTM(num_ner_labels, 128, num_layers=5, bidirectional=True, batch_first=True)
+		# 尝试加入多头注意力机制--------------------------------------------------------修改
+		# 参考https://github.com/yoseflaw/nerindo/blob/master/nerindo/models.py
+		self.mutli_attention = nn.MultiheadAttention(embed_dim=num_ner_labels, num_heads=5, dropout=0.1)
+		#-----------------------------------------------------------------------------修改
+		# LSTM FC
+		self.hidden2tag = nn.Linear(256, num_ner_labels)
+		# 注意力 FC
+		self.fc = nn.Linear(10, num_ner_labels)
+
+		def init_weights(module):
+			if isinstance(module, (nn.Linear, nn.Embedding)):
+				# Slightly different from the TF version which uses truncated_normal for initialization
+				# cf https://github.com/pytorch/pytorch/pull/5617
+				module.weight.data.normal_(mean=0.0, std=config.initializer_range)
+			elif isinstance(module, BERTLayerNorm):
+				module.beta.data.normal_(mean=0.0, std=config.initializer_range)
+				module.gamma.data.normal_(mean=0.0, std=config.initializer_range)
+			if isinstance(module, nn.Linear):
+				module.bias.data.zero_()
+		self.apply(init_weights)
+
+	#增加互信息loss----------------------------------------------------------------	
+	def categorical_crossentropy_with_prior(y_pred, y_true, tau=1.0):
+		prior = torch.tensor([1.0,38.0])
+		log_prior = torch.log(prior+1e-8)
+		for _ in range(y_pred.dim() - 1):
+			log_prior = torch.unsqueeze(log_prior, 0)
+		y_pred = y_pred - tau * log_prior.type(torch.FloatTensor).cuda()
+		loss_fct = CrossEntropyLoss()
+		return loss_fct(y_pred, y_true)
+	#----------------------------------------------------------------
+
+	def forward(self, input_ids, token_type_ids, attention_mask, labels, ner_labels, ner_mask, eval_flag):# eval_flag
+		all_encoder_layers, pooled_output = self.bert(input_ids, token_type_ids, attention_mask)
+		# get the last hidden layer
+		sequence_output = all_encoder_layers[-1]
+		# cross a dropout layer
+		sequence_output = self.dropout(sequence_output)
+		pooled_output = self.dropout(pooled_output)
+		# the Classifier of category & polarity
+		logits = self.classifier(pooled_output)
+		ner_logits = self.ner_hidden2tag(sequence_output)#(24,128,5)
+		# ner_logits传入BiLSTM中
+		birnn_sequence_output, _ = self.birnn(ner_logits)
+		birnn_sequence_output = self.dropoutNER(birnn_sequence_output)#(24,128,256)(batch, seq_len, num_directions * hidden_size)
+		#----------------------------------------------------下面为修改
+		'''
+		# BiLSTM输出
+		birnn_output = self.hidden2tag(birnn_sequence_output)#(24,128,5)
+		# 多头注意力机制
+		ner_logits = ner_logits.permute(1,0,2)
+		attn_output, _ = self.mutli_attention(ner_logits, ner_logits,ner_logits)#(128,24,5)
+		attn_output = attn_output.permute(1,0,2) #(24,128,5)
+		# attn_output = self.hidden2tag(attn_output)#(24,128,5)
+		# 拼接两者输出
+		output = torch.cat((birnn_output,attn_output),2)
+		output = self.fc(output)
+		output = torch.tanh(output)
+		# print(output.size())
+		# print(ner_labels.size())#(24,128)
+		# the CRF layer of NER labels
+		ner_loss_list = self.CRF_model(output, ner_labels, ner_mask.type(torch.ByteTensor).cuda(), reduction='none')
+		ner_loss = torch.mean(-ner_loss_list)
+		ner_predict = self.CRF_model.decode(output, ner_mask.type(torch.ByteTensor).cuda())
+		#---------------------------------------------------
+		'''
+		'''
+		# 多头注意力机制------------------------------------------------------------------------------------修改
+		ner_logits = ner_logits.permute(1,0,2)#(128,24,5)
+		attn_output, _ = self.mutli_attention(ner_logits, ner_logits, ner_logits)#新增----------------------#(128,24,5)
+		attn_output = attn_output.permute(1,0,2)#(24,128,5)
+		# BiLSTM输出
+		birnn_sequence_output, _ = self.birnn(attn_output)
+		birnn_sequence_output = self.dropoutNER(birnn_sequence_output)#(24,128,256)
+		birnn_output = self.hidden2tag(birnn_sequence_output)
+		# the CRF layer of NER labels
+		ner_loss_list = self.CRF_model(birnn_output, ner_labels, ner_mask.type(torch.ByteTensor).cuda(), reduction='none')
+		ner_loss = torch.mean(-ner_loss_list)
+		ner_predict = self.CRF_model.decode(birnn_output, ner_mask.type(torch.ByteTensor).cuda())
+		#--------------------------------------------------------------------------------------------------修改
+		'''
+		
+		# BiLSTM输出
+		birnn_output = self.hidden2tag(birnn_sequence_output)
+		# the CRF layer of NER labels
+		ner_loss_list = self.CRF_model(birnn_output, ner_labels, ner_mask.type(torch.ByteTensor).cuda(), reduction='none')
+		ner_loss = torch.mean(-ner_loss_list)
+		ner_predict = self.CRF_model.decode(birnn_output, ner_mask.type(torch.ByteTensor).cuda())
+		
+		# the classifier of category & polarity 尝试采用focal loss
+		# loss_fct = focal_loss(alpha=0.75, gamma=2, num_classes=2) 失败
+		# loss_fct = DiceLoss(weight=[1,1])
+		# 参考https://blog.csdn.net/HUSTHY/article/details/103887957对损失函数进行修改 权重分配yes：no = 38:1 失败
+		# loss_fct = torch.nn.CrossEntropyLoss(weight=torch.from_numpy(np.array([38,1])).float().cuda())
+		
+		if eval_flag:#控制bool在测试的时候使用交叉熵 训练的时候使用互信息
+			loss = BertForTABSAJoint_BiLSTM_CRF.categorical_crossentropy_with_prior(logits, labels, tau=1.0)
+		else:
+			loss_fct = CrossEntropyLoss()
+			loss = loss_fct(logits, labels)
+		'''
+		loss_fct = CrossEntropyLoss()
+		loss = loss_fct(logits, labels)
+		'''
+		# loss = BertForTABSAJoint_BiLSTM_CRF.categorical_crossentropy_with_prior(logits, labels, tau=1.0)
+		#----------------------------------------------------------------------修改
+		return loss, ner_loss, logits, ner_predict
