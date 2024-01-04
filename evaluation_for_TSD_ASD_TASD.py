@@ -288,6 +288,8 @@ def evaluate_TASD(path, epochs, tag_schema):
 	best_NO_and_O_F1 = 0
 	for index in range(epochs):
 		file_pre = 'test_ep_' + str(index+1)
+		if not os.path.exists(os.path.join(path, TXT_file(file_pre))):
+			continue
 		with open(os.path.join(path, TXT_file(file_pre)), 'r', encoding='utf-8') as f_pre:
 			Gold_Num = 0
 			True_Num = 0

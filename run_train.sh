@@ -7,9 +7,10 @@ CUDA_VISIBLE_DEVICES=0 python TAS_BERT_joint.py \
 --tokenize_method word_split \
 --use_crf \
 --eval_test \
+--test_freq 10 \
 --do_lower_case \
 --max_seq_length 128 \
 --train_batch_size 48 \
 --eval_batch_size 128 \
 --learning_rate 2e-5 \
---num_train_epochs 30.0
+--num_train_epochs 30
