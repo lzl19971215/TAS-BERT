@@ -13,6 +13,7 @@ import os
 import re
 import argparse
 from change_TO_to_BIO import TXT_file, TSV_file, change_TO_to_BIO
+from random import shuffle
 
 def get_aspect_sentiment_compose(path, file_name):
 	aspect_set = []
@@ -33,7 +34,7 @@ def get_aspect_sentiment_compose(path, file_name):
 	return compose_set
 
 
-def create_dataset_file(input_path, output_path, input_file, output_file, compose_set):
+def create_dataset_file(input_path, output_path, input_file, output_file, compose_set, n_sample_per_sentence):
 	one_data_nums = 0
 	zero_data_nums = 0
 	max_len = 0
@@ -54,15 +55,33 @@ def create_dataset_file(input_path, output_path, input_file, output_file, compos
 			sentence_id = line_arr[0]
 			if sentence_id != pre_sentence_id:	# this is a new sentence
 				if pre_start == True:
-					for x in compose_set:
-						# create yes line of this sentence
-						if x in record_of_one_sentence:
-							fout.write(pre_sentence_id + '\t' + '1' + '\t' + x + '\t' + pre_sentence + '\t' + record_of_one_sentence_ner_tag[x] + '\n')
+					if n_sample_per_sentence == -1:
+						for x in compose_set:
+							# create yes line of this sentence
+							if x in record_of_one_sentence:
+								fout.write(pre_sentence_id + '\t' + '1' + '\t' + x + '\t' + pre_sentence + '\t' + record_of_one_sentence_ner_tag[x] + '\n')
+								one_data_nums += 1
+							# create no line
+							else:
+								fout.write(pre_sentence_id + '\t' + '0' + '\t' + x + '\t' + pre_sentence + '\t' + ' '.join(['O']*len(pre_sentence.split())) + '\n')
+								zero_data_nums += 1
+					else:
+						sample_num = 0
+						for cate in record_of_one_sentence:
+							# create yes line of this sentence
+							fout.write(pre_sentence_id + '\t' + '1' + '\t' + cate + '\t' + pre_sentence + '\t' + record_of_one_sentence_ner_tag[cate] + '\n')
 							one_data_nums += 1
-						# create no line
-						else:
-							fout.write(pre_sentence_id + '\t' + '0' + '\t' + x + '\t' + pre_sentence + '\t' + ' '.join(['O']*len(pre_sentence.split())) + '\n')
-							zero_data_nums += 1
+							sample_num += 1
+						shuffle_compose_set = list(compose_set)
+						shuffle(shuffle_compose_set)						
+						for x in shuffle_compose_set:
+							# create no line
+							if x not in record_of_one_sentence:
+								if sample_num == n_sample_per_sentence:
+									break
+								fout.write(pre_sentence_id + '\t' + '0' + '\t' + x + '\t' + pre_sentence + '\t' + ' '.join(['O']*len(pre_sentence.split())) + '\n')
+								zero_data_nums += 1
+								sample_num += 1
 
 				else:
 					pre_start = True
@@ -174,7 +193,14 @@ if __name__ == '__main__':
 	parser.add_argument('--dataset',
 						type=str,
 						choices=["semeval2015", "semeval2016", "laptop"],
-						help='dataset, as a folder name, you can choose from semeval2015 and semeval2016')
+						help='dataset, as a folder name, you can choose from semeval2015 and semeval2016',
+						default='laptop'
+						)
+	parser.add_argument('--n_sample_per_sentence',
+						type=int,
+						default=-1,
+						help='sample num for training per sample',
+						)
 	args = parser.parse_args()
 
 	path = args.dataset + '/three_joint'
@@ -190,14 +216,15 @@ if __name__ == '__main__':
 		train_file = 'laptop_tas_train'
 		test_file = 'laptop_tas_test'
 	train_output = 'train_TAS'
-	test_output = 'test_TAS'
+	test_output = 'test_TAS_full'
 
 	# get set of aspect-sentiment
 	compose_set = get_aspect_sentiment_compose(args.dataset, train_file)
 
-	for input_file, output_file in zip([train_file, test_file], [train_output, test_output]):
+	for input_file, output_file in zip([test_file], [test_output]):
 		# get preprocessed data, TO labeling schema
-		create_dataset_file(args.dataset, output_path, input_file, output_file, compose_set)
+		n_sample_per_sentence = args.n_sample_per_sentence if 'test' not in input_file else -1
+		create_dataset_file(args.dataset, output_path, input_file, output_file, compose_set, n_sample_per_sentence=n_sample_per_sentence)
 		# get preprocessed data, BIO labeling schema
 		change_TO_to_BIO(path, output_file)
 

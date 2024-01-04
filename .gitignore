@@ -1,3 +1,6 @@
 __pycache__/
 data/*/three_joint
 **.pyc
+uncased_L-12_H-768_A-12/
+.ipynb_checkpoints/
+.vscode/

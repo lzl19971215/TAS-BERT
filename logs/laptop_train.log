@@ -1,0 +1,518 @@
+nohup: ignoring input
+01/03/2024 16:32:33 - INFO - __main__ -   device cuda n_gpu 1 distributed training False
+01/03/2024 16:32:55 - INFO - __main__ -   ***** Running training *****
+01/03/2024 16:32:55 - INFO - __main__ -     Num examples = 35196
+01/03/2024 16:32:55 - INFO - __main__ -     Batch size = 32
+01/03/2024 16:32:55 - INFO - __main__ -     Num steps = 32996
+01/03/2024 16:44:33 - INFO - __main__ -   ***** Eval results *****
+01/03/2024 16:44:33 - INFO - __main__ -     epoch = 1
+
+01/03/2024 16:44:33 - INFO - __main__ -     global_step = 1100
+
+01/03/2024 16:44:33 - INFO - __main__ -     loss = 0.25132026240229605
+
+01/03/2024 16:44:33 - INFO - __main__ -     test_loss = 0.1632278522634818
+
+01/03/2024 16:44:33 - INFO - __main__ -     ner_test_loss = 0.3437182420219471
+
+01/03/2024 16:44:33 - INFO - __main__ -     test_accuracy = 0.9316973415132924
+
+01/03/2024 16:55:57 - INFO - __main__ -   ***** Eval results *****
+01/03/2024 16:55:57 - INFO - __main__ -     epoch = 2
+
+01/03/2024 16:55:57 - INFO - __main__ -     global_step = 2200
+
+01/03/2024 16:55:57 - INFO - __main__ -     loss = 0.13818419786170125
+
+01/03/2024 16:55:57 - INFO - __main__ -     test_loss = 0.10960674231104992
+
+01/03/2024 16:55:57 - INFO - __main__ -     ner_test_loss = 0.2660109873836726
+
+01/03/2024 16:55:57 - INFO - __main__ -     test_accuracy = 0.9592024539877301
+
+01/03/2024 17:07:21 - INFO - __main__ -   ***** Eval results *****
+01/03/2024 17:07:21 - INFO - __main__ -     epoch = 3
+
+01/03/2024 17:07:21 - INFO - __main__ -     global_step = 3300
+
+01/03/2024 17:07:21 - INFO - __main__ -     loss = 0.11236519279974429
+
+01/03/2024 17:07:21 - INFO - __main__ -     test_loss = 0.1013470779483517
+
+01/03/2024 17:07:21 - INFO - __main__ -     ner_test_loss = 0.2354790394261382
+
+01/03/2024 17:07:21 - INFO - __main__ -     test_accuracy = 0.9616564417177914
+
+01/03/2024 17:18:46 - INFO - __main__ -   ***** Eval results *****
+01/03/2024 17:18:46 - INFO - __main__ -     epoch = 4
+
+01/03/2024 17:18:46 - INFO - __main__ -     global_step = 4400
+
+01/03/2024 17:18:46 - INFO - __main__ -     loss = 0.08874020815064962
+
+01/03/2024 17:18:46 - INFO - __main__ -     test_loss = 0.09383620699758038
+
+01/03/2024 17:18:46 - INFO - __main__ -     ner_test_loss = 0.2451533510842744
+
+01/03/2024 17:18:46 - INFO - __main__ -     test_accuracy = 0.9668711656441717
+
+01/03/2024 17:30:08 - INFO - __main__ -   ***** Eval results *****
+01/03/2024 17:30:08 - INFO - __main__ -     epoch = 5
+
+01/03/2024 17:30:08 - INFO - __main__ -     global_step = 5500
+
+01/03/2024 17:30:08 - INFO - __main__ -     loss = 0.07354439708573575
+
+01/03/2024 17:30:08 - INFO - __main__ -     test_loss = 0.09815823866870084
+
+01/03/2024 17:30:08 - INFO - __main__ -     ner_test_loss = 0.2724205306639858
+
+01/03/2024 17:30:08 - INFO - __main__ -     test_accuracy = 0.9677914110429447
+
+01/03/2024 17:41:30 - INFO - __main__ -   ***** Eval results *****
+01/03/2024 17:41:30 - INFO - __main__ -     epoch = 6
+
+01/03/2024 17:41:30 - INFO - __main__ -     global_step = 6600
+
+01/03/2024 17:41:30 - INFO - __main__ -     loss = 0.06174753626046533
+
+01/03/2024 17:41:30 - INFO - __main__ -     test_loss = 0.09392737739664667
+
+01/03/2024 17:41:30 - INFO - __main__ -     ner_test_loss = 0.29379691931059937
+
+01/03/2024 17:41:30 - INFO - __main__ -     test_accuracy = 0.9665644171779141
+
+01/03/2024 17:52:54 - INFO - __main__ -   ***** Eval results *****
+01/03/2024 17:52:54 - INFO - __main__ -     epoch = 7
+
+01/03/2024 17:52:54 - INFO - __main__ -     global_step = 7700
+
+01/03/2024 17:52:54 - INFO - __main__ -     loss = 0.049566144442228094
+
+01/03/2024 17:52:54 - INFO - __main__ -     test_loss = 0.1280172118137962
+
+01/03/2024 17:52:54 - INFO - __main__ -     ner_test_loss = 0.2659831248175085
+
+01/03/2024 17:52:54 - INFO - __main__ -     test_accuracy = 0.968200408997955
+
+01/03/2024 18:04:18 - INFO - __main__ -   ***** Eval results *****
+01/03/2024 18:04:18 - INFO - __main__ -     epoch = 8
+
+01/03/2024 18:04:18 - INFO - __main__ -     global_step = 8800
+
+01/03/2024 18:04:18 - INFO - __main__ -     loss = 0.04166318401948295
+
+01/03/2024 18:04:18 - INFO - __main__ -     test_loss = 0.11988020680382167
+
+01/03/2024 18:04:18 - INFO - __main__ -     ner_test_loss = 0.30142984963539576
+
+01/03/2024 18:04:18 - INFO - __main__ -     test_accuracy = 0.9696319018404908
+
+01/03/2024 18:15:40 - INFO - __main__ -   ***** Eval results *****
+01/03/2024 18:15:40 - INFO - __main__ -     epoch = 9
+
+01/03/2024 18:15:40 - INFO - __main__ -     global_step = 9900
+
+01/03/2024 18:15:40 - INFO - __main__ -     loss = 0.03363248184323311
+
+01/03/2024 18:15:40 - INFO - __main__ -     test_loss = 0.12706695889348005
+
+01/03/2024 18:15:40 - INFO - __main__ -     ner_test_loss = 0.3820666860046437
+
+01/03/2024 18:15:40 - INFO - __main__ -     test_accuracy = 0.9692229038854806
+
+01/03/2024 18:27:04 - INFO - __main__ -   ***** Eval results *****
+01/03/2024 18:27:04 - INFO - __main__ -     epoch = 10
+
+01/03/2024 18:27:04 - INFO - __main__ -     global_step = 11000
+
+01/03/2024 18:27:04 - INFO - __main__ -     loss = 0.023844599725085902
+
+01/03/2024 18:27:04 - INFO - __main__ -     test_loss = 0.12314679714306288
+
+01/03/2024 18:27:04 - INFO - __main__ -     ner_test_loss = 0.34168551413470183
+
+01/03/2024 18:27:04 - INFO - __main__ -     test_accuracy = 0.9683026584867076
+
+01/03/2024 18:38:24 - INFO - __main__ -   ***** Eval results *****
+01/03/2024 18:38:24 - INFO - __main__ -     epoch = 11
+
+01/03/2024 18:38:24 - INFO - __main__ -     global_step = 12100
+
+01/03/2024 18:38:24 - INFO - __main__ -     loss = 0.021607459615069356
+
+01/03/2024 18:38:24 - INFO - __main__ -     test_loss = 0.12025508504007863
+
+01/03/2024 18:38:24 - INFO - __main__ -     ner_test_loss = 0.39927848346920963
+
+01/03/2024 18:38:24 - INFO - __main__ -     test_accuracy = 0.9692229038854806
+
+01/03/2024 18:49:48 - INFO - __main__ -   ***** Eval results *****
+01/03/2024 18:49:48 - INFO - __main__ -     epoch = 12
+
+01/03/2024 18:49:48 - INFO - __main__ -     global_step = 13200
+
+01/03/2024 18:49:48 - INFO - __main__ -     loss = 0.017599275744604792
+
+01/03/2024 18:49:48 - INFO - __main__ -     test_loss = 0.14922062711635364
+
+01/03/2024 18:49:48 - INFO - __main__ -     ner_test_loss = 0.4474513475742081
+
+01/03/2024 18:49:48 - INFO - __main__ -     test_accuracy = 0.969120654396728
+
+01/03/2024 19:01:12 - INFO - __main__ -   ***** Eval results *****
+01/03/2024 19:01:12 - INFO - __main__ -     epoch = 13
+
+01/03/2024 19:01:12 - INFO - __main__ -     global_step = 14300
+
+01/03/2024 19:01:12 - INFO - __main__ -     loss = 0.015763655960221182
+
+01/03/2024 19:01:12 - INFO - __main__ -     test_loss = 0.13735246171549365
+
+01/03/2024 19:01:12 - INFO - __main__ -     ner_test_loss = 0.3588337683395842
+
+01/03/2024 19:01:12 - INFO - __main__ -     test_accuracy = 0.9695296523517383
+
+01/03/2024 19:12:36 - INFO - __main__ -   ***** Eval results *****
+01/03/2024 19:12:36 - INFO - __main__ -     epoch = 14
+
+01/03/2024 19:12:36 - INFO - __main__ -     global_step = 15400
+
+01/03/2024 19:12:36 - INFO - __main__ -     loss = 0.013053017910040746
+
+01/03/2024 19:12:36 - INFO - __main__ -     test_loss = 0.16780936336374971
+
+01/03/2024 19:12:36 - INFO - __main__ -     ner_test_loss = 0.5434427558327645
+
+01/03/2024 19:12:36 - INFO - __main__ -     test_accuracy = 0.9705521472392638
+
+01/03/2024 19:24:00 - INFO - __main__ -   ***** Eval results *****
+01/03/2024 19:24:00 - INFO - __main__ -     epoch = 15
+
+01/03/2024 19:24:00 - INFO - __main__ -     global_step = 16500
+
+01/03/2024 19:24:00 - INFO - __main__ -     loss = 0.011025612289720977
+
+01/03/2024 19:24:00 - INFO - __main__ -     test_loss = 0.16085094556587543
+
+01/03/2024 19:24:00 - INFO - __main__ -     ner_test_loss = 0.5361556338570141
+
+01/03/2024 19:24:00 - INFO - __main__ -     test_accuracy = 0.9694274028629857
+
+01/03/2024 19:35:22 - INFO - __main__ -   ***** Eval results *****
+01/03/2024 19:35:22 - INFO - __main__ -     epoch = 16
+
+01/03/2024 19:35:22 - INFO - __main__ -     global_step = 17600
+
+01/03/2024 19:35:22 - INFO - __main__ -     loss = 0.007837697838060029
+
+01/03/2024 19:35:22 - INFO - __main__ -     test_loss = 0.17112585480988415
+
+01/03/2024 19:35:22 - INFO - __main__ -     ner_test_loss = 0.44369897586495155
+
+01/03/2024 19:35:22 - INFO - __main__ -     test_accuracy = 0.9699386503067484
+
+01/03/2024 19:46:45 - INFO - __main__ -   ***** Eval results *****
+01/03/2024 19:46:45 - INFO - __main__ -     epoch = 17
+
+01/03/2024 19:46:45 - INFO - __main__ -     global_step = 18700
+
+01/03/2024 19:46:45 - INFO - __main__ -     loss = 0.0065605783872491556
+
+01/03/2024 19:46:45 - INFO - __main__ -     test_loss = 0.18618361027972177
+
+01/03/2024 19:46:45 - INFO - __main__ -     ner_test_loss = 0.5650223608500038
+
+01/03/2024 19:46:45 - INFO - __main__ -     test_accuracy = 0.9701431492842536
+
+01/03/2024 19:58:08 - INFO - __main__ -   ***** Eval results *****
+01/03/2024 19:58:08 - INFO - __main__ -     epoch = 18
+
+01/03/2024 19:58:08 - INFO - __main__ -     global_step = 19800
+
+01/03/2024 19:58:08 - INFO - __main__ -     loss = 0.005911169047414494
+
+01/03/2024 19:58:08 - INFO - __main__ -     test_loss = 0.1802246804658519
+
+01/03/2024 19:58:08 - INFO - __main__ -     ner_test_loss = 0.5133890381346919
+
+01/03/2024 19:58:08 - INFO - __main__ -     test_accuracy = 0.9688139059304703
+
+01/03/2024 20:09:30 - INFO - __main__ -   ***** Eval results *****
+01/03/2024 20:09:30 - INFO - __main__ -     epoch = 19
+
+01/03/2024 20:09:30 - INFO - __main__ -     global_step = 20900
+
+01/03/2024 20:09:30 - INFO - __main__ -     loss = 0.004708827256961905
+
+01/03/2024 20:09:30 - INFO - __main__ -     test_loss = 0.19860872865105836
+
+01/03/2024 20:09:30 - INFO - __main__ -     ner_test_loss = 0.5717999599817905
+
+01/03/2024 20:09:30 - INFO - __main__ -     test_accuracy = 0.9697341513292433
+
+01/03/2024 20:20:53 - INFO - __main__ -   ***** Eval results *****
+01/03/2024 20:20:53 - INFO - __main__ -     epoch = 20
+
+01/03/2024 20:20:53 - INFO - __main__ -     global_step = 22000
+
+01/03/2024 20:20:53 - INFO - __main__ -     loss = 0.0043801109239972325
+
+01/03/2024 20:20:53 - INFO - __main__ -     test_loss = 0.20921282569585908
+
+01/03/2024 20:20:53 - INFO - __main__ -     ner_test_loss = 0.6325539749821806
+
+01/03/2024 20:20:53 - INFO - __main__ -     test_accuracy = 0.9690184049079754
+
+01/03/2024 20:32:15 - INFO - __main__ -   ***** Eval results *****
+01/03/2024 20:32:15 - INFO - __main__ -     epoch = 21
+
+01/03/2024 20:32:15 - INFO - __main__ -     global_step = 23100
+
+01/03/2024 20:32:15 - INFO - __main__ -     loss = 0.0047467535141516816
+
+01/03/2024 20:32:15 - INFO - __main__ -     test_loss = 0.19232481554368575
+
+01/03/2024 20:32:15 - INFO - __main__ -     ner_test_loss = 0.5349715696530777
+
+01/03/2024 20:32:15 - INFO - __main__ -     test_accuracy = 0.9708588957055214
+
+01/03/2024 20:43:36 - INFO - __main__ -   ***** Eval results *****
+01/03/2024 20:43:36 - INFO - __main__ -     epoch = 22
+
+01/03/2024 20:43:36 - INFO - __main__ -     global_step = 24200
+
+01/03/2024 20:43:36 - INFO - __main__ -     loss = 0.0032280312379589305
+
+01/03/2024 20:43:36 - INFO - __main__ -     test_loss = 0.1983682615214301
+
+01/03/2024 20:43:36 - INFO - __main__ -     ner_test_loss = 0.5715217908882967
+
+01/03/2024 20:43:36 - INFO - __main__ -     test_accuracy = 0.9705521472392638
+
+01/03/2024 20:54:58 - INFO - __main__ -   ***** Eval results *****
+01/03/2024 20:54:58 - INFO - __main__ -     epoch = 23
+
+01/03/2024 20:54:58 - INFO - __main__ -     global_step = 25300
+
+01/03/2024 20:54:58 - INFO - __main__ -     loss = 0.0022508556816650195
+
+01/03/2024 20:54:58 - INFO - __main__ -     test_loss = 0.22737180508247667
+
+01/03/2024 20:54:58 - INFO - __main__ -     ner_test_loss = 0.6192090235924173
+
+01/03/2024 20:54:58 - INFO - __main__ -     test_accuracy = 0.9690184049079754
+
+01/03/2024 21:06:19 - INFO - __main__ -   ***** Eval results *****
+01/03/2024 21:06:19 - INFO - __main__ -     epoch = 24
+
+01/03/2024 21:06:19 - INFO - __main__ -     global_step = 26400
+
+01/03/2024 21:06:19 - INFO - __main__ -     loss = 0.00226921933328082
+
+01/03/2024 21:06:19 - INFO - __main__ -     test_loss = 0.2218689967106959
+
+01/03/2024 21:06:19 - INFO - __main__ -     ner_test_loss = 0.6431151180036098
+
+01/03/2024 21:06:19 - INFO - __main__ -     test_accuracy = 0.970040899795501
+
+01/03/2024 21:17:41 - INFO - __main__ -   ***** Eval results *****
+01/03/2024 21:17:41 - INFO - __main__ -     epoch = 25
+
+01/03/2024 21:17:41 - INFO - __main__ -     global_step = 27500
+
+01/03/2024 21:17:41 - INFO - __main__ -     loss = 0.0019439406159587882
+
+01/03/2024 21:17:41 - INFO - __main__ -     test_loss = 0.21502391101353616
+
+01/03/2024 21:17:41 - INFO - __main__ -     ner_test_loss = 0.643382264912706
+
+01/03/2024 21:17:41 - INFO - __main__ -     test_accuracy = 0.9699386503067484
+
+01/03/2024 21:29:03 - INFO - __main__ -   ***** Eval results *****
+01/03/2024 21:29:03 - INFO - __main__ -     epoch = 26
+
+01/03/2024 21:29:03 - INFO - __main__ -     global_step = 28600
+
+01/03/2024 21:29:03 - INFO - __main__ -     loss = 0.0018930307063353459
+
+01/03/2024 21:29:03 - INFO - __main__ -     test_loss = 0.20856635809711102
+
+01/03/2024 21:29:03 - INFO - __main__ -     ner_test_loss = 0.6235415050287093
+
+01/03/2024 21:29:03 - INFO - __main__ -     test_accuracy = 0.9711656441717792
+
+01/03/2024 21:40:26 - INFO - __main__ -   ***** Eval results *****
+01/03/2024 21:40:26 - INFO - __main__ -     epoch = 27
+
+01/03/2024 21:40:26 - INFO - __main__ -     global_step = 29700
+
+01/03/2024 21:40:26 - INFO - __main__ -     loss = 0.0014312227497297995
+
+01/03/2024 21:40:26 - INFO - __main__ -     test_loss = 0.23300915346479478
+
+01/03/2024 21:40:26 - INFO - __main__ -     ner_test_loss = 0.7093658659433024
+
+01/03/2024 21:40:26 - INFO - __main__ -     test_accuracy = 0.9695296523517383
+
+01/03/2024 21:51:49 - INFO - __main__ -   ***** Eval results *****
+01/03/2024 21:51:49 - INFO - __main__ -     epoch = 28
+
+01/03/2024 21:51:49 - INFO - __main__ -     global_step = 30800
+
+01/03/2024 21:51:49 - INFO - __main__ -     loss = 0.0012882649767892542
+
+01/03/2024 21:51:49 - INFO - __main__ -     test_loss = 0.2216271420677681
+
+01/03/2024 21:51:49 - INFO - __main__ -     ner_test_loss = 0.6595590630028406
+
+01/03/2024 21:51:49 - INFO - __main__ -     test_accuracy = 0.9704498977505113
+
+01/03/2024 22:03:10 - INFO - __main__ -   ***** Eval results *****
+01/03/2024 22:03:10 - INFO - __main__ -     epoch = 29
+
+01/03/2024 22:03:10 - INFO - __main__ -     global_step = 31900
+
+01/03/2024 22:03:10 - INFO - __main__ -     loss = 0.0013584146781696208
+
+01/03/2024 22:03:10 - INFO - __main__ -     test_loss = 0.22121095429784737
+
+01/03/2024 22:03:10 - INFO - __main__ -     ner_test_loss = 0.675587540942865
+
+01/03/2024 22:03:10 - INFO - __main__ -     test_accuracy = 0.9703476482617587
+
+01/03/2024 22:14:31 - INFO - __main__ -   ***** Eval results *****
+01/03/2024 22:14:31 - INFO - __main__ -     epoch = 30
+
+01/03/2024 22:14:31 - INFO - __main__ -     global_step = 33000
+
+01/03/2024 22:14:31 - INFO - __main__ -     loss = 0.0008320990037927086
+
+01/03/2024 22:14:31 - INFO - __main__ -     test_loss = 0.22625250664908045
+
+01/03/2024 22:14:31 - INFO - __main__ -     ner_test_loss = 0.6871403237573521
+
+01/03/2024 22:14:31 - INFO - __main__ -     test_accuracy = 0.9704498977505113
+
+['[PAD]', '[CLS]', 'B', 'O', 'I']
+output_log_file= results/laptop/three_joint/BIO/my_result/log.txt
+[2024-01-03 16:33:09.257064] Training Epoch: 1
+[2024-01-03 16:36:06.605907] Training Epoch: 1 Step: 300
+[2024-01-03 16:39:04.200241] Training Epoch: 1 Step: 600
+[2024-01-03 16:42:02.626578] Training Epoch: 1 Step: 900
+[2024-01-03 16:44:33.961137] Training Epoch: 2
+[2024-01-03 16:47:31.355901] Training Epoch: 2 Step: 300
+[2024-01-03 16:50:28.757411] Training Epoch: 2 Step: 600
+[2024-01-03 16:53:25.845927] Training Epoch: 2 Step: 900
+[2024-01-03 16:55:57.496396] Training Epoch: 3
+[2024-01-03 16:58:54.023322] Training Epoch: 3 Step: 300
+[2024-01-03 17:01:52.328437] Training Epoch: 3 Step: 600
+[2024-01-03 17:04:49.608932] Training Epoch: 3 Step: 900
+[2024-01-03 17:07:21.296797] Training Epoch: 4
+[2024-01-03 17:10:18.676924] Training Epoch: 4 Step: 300
+[2024-01-03 17:13:16.231630] Training Epoch: 4 Step: 600
+[2024-01-03 17:16:14.689797] Training Epoch: 4 Step: 900
+[2024-01-03 17:18:46.434186] Training Epoch: 5
+[2024-01-03 17:21:42.857283] Training Epoch: 5 Step: 300
+[2024-01-03 17:24:39.062931] Training Epoch: 5 Step: 600
+[2024-01-03 17:27:36.783981] Training Epoch: 5 Step: 900
+[2024-01-03 17:30:08.427119] Training Epoch: 6
+[2024-01-03 17:33:04.706927] Training Epoch: 6 Step: 300
+[2024-01-03 17:36:01.854645] Training Epoch: 6 Step: 600
+[2024-01-03 17:38:59.599348] Training Epoch: 6 Step: 900
+[2024-01-03 17:41:30.765887] Training Epoch: 7
+[2024-01-03 17:44:28.048516] Training Epoch: 7 Step: 300
+[2024-01-03 17:47:25.792431] Training Epoch: 7 Step: 600
+[2024-01-03 17:50:23.283524] Training Epoch: 7 Step: 900
+[2024-01-03 17:52:54.380186] Training Epoch: 8
+[2024-01-03 17:55:51.656174] Training Epoch: 8 Step: 300
+[2024-01-03 17:58:49.516787] Training Epoch: 8 Step: 600
+[2024-01-03 18:01:47.262349] Training Epoch: 8 Step: 900
+[2024-01-03 18:04:18.530263] Training Epoch: 9
+[2024-01-03 18:07:15.441624] Training Epoch: 9 Step: 300
+[2024-01-03 18:10:13.039820] Training Epoch: 9 Step: 600
+[2024-01-03 18:13:09.774598] Training Epoch: 9 Step: 900
+[2024-01-03 18:15:40.984416] Training Epoch: 10
+[2024-01-03 18:18:37.812030] Training Epoch: 10 Step: 300
+[2024-01-03 18:21:35.272421] Training Epoch: 10 Step: 600
+[2024-01-03 18:24:32.622012] Training Epoch: 10 Step: 900
+[2024-01-03 18:27:04.042382] Training Epoch: 11
+[2024-01-03 18:30:00.666834] Training Epoch: 11 Step: 300
+[2024-01-03 18:32:55.368200] Training Epoch: 11 Step: 600
+[2024-01-03 18:35:53.113272] Training Epoch: 11 Step: 900
+[2024-01-03 18:38:24.720082] Training Epoch: 12
+[2024-01-03 18:41:21.862174] Training Epoch: 12 Step: 300
+[2024-01-03 18:44:19.016642] Training Epoch: 12 Step: 600
+[2024-01-03 18:47:16.731690] Training Epoch: 12 Step: 900
+[2024-01-03 18:49:48.029980] Training Epoch: 13
+[2024-01-03 18:52:44.756177] Training Epoch: 13 Step: 300
+[2024-01-03 18:55:42.413576] Training Epoch: 13 Step: 600
+[2024-01-03 18:58:40.738027] Training Epoch: 13 Step: 900
+[2024-01-03 19:01:12.081243] Training Epoch: 14
+[2024-01-03 19:04:10.128046] Training Epoch: 14 Step: 300
+[2024-01-03 19:07:07.217311] Training Epoch: 14 Step: 600
+[2024-01-03 19:10:05.144530] Training Epoch: 14 Step: 900
+[2024-01-03 19:12:36.042117] Training Epoch: 15
+[2024-01-03 19:15:33.680732] Training Epoch: 15 Step: 300
+[2024-01-03 19:18:31.072078] Training Epoch: 15 Step: 600
+[2024-01-03 19:21:29.114719] Training Epoch: 15 Step: 900
+[2024-01-03 19:24:00.101442] Training Epoch: 16
+[2024-01-03 19:26:57.053580] Training Epoch: 16 Step: 300
+[2024-01-03 19:29:54.794710] Training Epoch: 16 Step: 600
+[2024-01-03 19:32:51.652481] Training Epoch: 16 Step: 900
+[2024-01-03 19:35:22.844629] Training Epoch: 17
+[2024-01-03 19:38:19.838871] Training Epoch: 17 Step: 300
+[2024-01-03 19:41:17.463536] Training Epoch: 17 Step: 600
+[2024-01-03 19:44:14.787424] Training Epoch: 17 Step: 900
+[2024-01-03 19:46:45.851720] Training Epoch: 18
+[2024-01-03 19:49:42.567014] Training Epoch: 18 Step: 300
+[2024-01-03 19:52:39.929864] Training Epoch: 18 Step: 600
+[2024-01-03 19:55:37.388867] Training Epoch: 18 Step: 900
+[2024-01-03 19:58:08.346025] Training Epoch: 19
+[2024-01-03 20:01:05.417268] Training Epoch: 19 Step: 300
+[2024-01-03 20:04:02.508245] Training Epoch: 19 Step: 600
+[2024-01-03 20:06:59.799859] Training Epoch: 19 Step: 900
+[2024-01-03 20:09:30.883293] Training Epoch: 20
+[2024-01-03 20:12:27.810362] Training Epoch: 20 Step: 300
+[2024-01-03 20:15:24.995345] Training Epoch: 20 Step: 600
+[2024-01-03 20:18:22.654468] Training Epoch: 20 Step: 900
+[2024-01-03 20:20:53.221499] Training Epoch: 21
+[2024-01-03 20:23:50.120459] Training Epoch: 21 Step: 300
+[2024-01-03 20:26:47.237298] Training Epoch: 21 Step: 600
+[2024-01-03 20:29:44.523400] Training Epoch: 21 Step: 900
+[2024-01-03 20:32:15.004505] Training Epoch: 22
+[2024-01-03 20:35:10.684444] Training Epoch: 22 Step: 300
+[2024-01-03 20:38:08.364759] Training Epoch: 22 Step: 600
+[2024-01-03 20:41:05.942463] Training Epoch: 22 Step: 900
+[2024-01-03 20:43:36.981018] Training Epoch: 23
+[2024-01-03 20:46:33.277474] Training Epoch: 23 Step: 300
+[2024-01-03 20:49:29.949514] Training Epoch: 23 Step: 600
+[2024-01-03 20:52:27.574095] Training Epoch: 23 Step: 900
+[2024-01-03 20:54:58.442179] Training Epoch: 24
+[2024-01-03 20:57:55.545552] Training Epoch: 24 Step: 300
+[2024-01-03 21:00:52.446661] Training Epoch: 24 Step: 600
+[2024-01-03 21:03:49.005068] Training Epoch: 24 Step: 900
+[2024-01-03 21:06:19.687105] Training Epoch: 25
+[2024-01-03 21:09:16.214025] Training Epoch: 25 Step: 300
+[2024-01-03 21:12:13.408341] Training Epoch: 25 Step: 600
+[2024-01-03 21:15:10.532772] Training Epoch: 25 Step: 900
+[2024-01-03 21:17:41.504771] Training Epoch: 26
+[2024-01-03 21:20:37.817361] Training Epoch: 26 Step: 300
+[2024-01-03 21:23:35.539980] Training Epoch: 26 Step: 600
+[2024-01-03 21:26:32.822925] Training Epoch: 26 Step: 900
+[2024-01-03 21:29:03.824009] Training Epoch: 27
+[2024-01-03 21:32:00.684365] Training Epoch: 27 Step: 300
+[2024-01-03 21:34:57.717139] Training Epoch: 27 Step: 600
+[2024-01-03 21:37:55.247701] Training Epoch: 27 Step: 900
+[2024-01-03 21:40:26.317104] Training Epoch: 28
+[2024-01-03 21:43:23.595657] Training Epoch: 28 Step: 300
+[2024-01-03 21:46:21.177483] Training Epoch: 28 Step: 600
+[2024-01-03 21:49:18.649793] Training Epoch: 28 Step: 900
+[2024-01-03 21:51:49.363194] Training Epoch: 29
+[2024-01-03 21:54:45.770615] Training Epoch: 29 Step: 300
+[2024-01-03 21:57:42.772460] Training Epoch: 29 Step: 600
+[2024-01-03 22:00:39.791591] Training Epoch: 29 Step: 900
+[2024-01-03 22:03:10.089845] Training Epoch: 30
+[2024-01-03 22:06:06.553563] Training Epoch: 30 Step: 300
+[2024-01-03 22:09:03.563430] Training Epoch: 30 Step: 600
+[2024-01-03 22:12:00.701459] Training Epoch: 30 Step: 900

@@ -20,6 +20,7 @@ from torch.utils.data import DataLoader, TensorDataset
 from torch.utils.data.distributed import DistributedSampler
 from torch.utils.data.sampler import RandomSampler, SequentialSampler
 from tqdm import tqdm, trange
+from datetime import datetime
 
 import tokenization
 from modeling import BertConfig, BertForTABSAJoint, BertForTABSAJoint_CRF
@@ -61,7 +62,8 @@ def convert_examples_to_features(examples, label_list, max_seq_length, tokenizer
 
 	features = []
 	all_tokens = []
-	for (ex_index, example) in enumerate(tqdm(examples)):
+	# for (ex_index, example) in enumerate(tqdm(examples)):
+	for (ex_index, example) in enumerate(examples):	
 		if tokenize_method == "word_split":
 			# word_split
 			word_num = 0
@@ -430,13 +432,18 @@ def main():
 
 	global_step = 0
 	epoch=0
-	for _ in trange(int(args.num_train_epochs), desc="Epoch"):
+	for _ in range(int(args.num_train_epochs)):	
+	# for _ in trange(int(args.num_train_epochs), desc="Epoch"):
 		epoch+=1
+		print("[{}] Training Epoch: {}".format(datetime.datetime.now(), epoch))
 		model.train()
 		tr_loss = 0
 		tr_ner_loss = 0
 		nb_tr_examples, nb_tr_steps = 0, 0
-		for step, batch in enumerate(tqdm(train_dataloader, desc="Iteration")):
+		for step, batch in enumerate(train_dataloader):
+		# for step, batch in enumerate(tqdm(train_dataloader, desc="Iteration")):
+			if (step + 1) % 300 == 0:
+				print("[{}] Training Epoch: {} Step: {}".format(datetime.datetime.now(), epoch, step+1))					
 			batch = tuple(t.to(device) for t in batch)
 			input_ids, input_mask, segment_ids, label_ids, ner_label_ids, ner_mask = batch
 			loss, ner_loss, _, _ = model(input_ids, segment_ids, input_mask, label_ids, ner_label_ids, ner_mask)
