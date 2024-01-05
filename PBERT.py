@@ -251,6 +251,10 @@ def main():
 						default=True,
 						action='store_true',
 						help="Whether to run eval on the test set.")
+	parser.add_argument("--test_freq",
+						default=1,
+						type=int,
+						help="test frequence")		
 	parser.add_argument("--do_lower_case",
 						default=True,
 						action='store_true',
@@ -443,6 +447,9 @@ def main():
 		tr_loss = 0
 		tr_ner_loss = 0
 		nb_tr_examples, nb_tr_steps = 0, 0
+
+		test_loss, test_accuracy = 0, 0
+		ner_test_loss = 0
 		for step, batch in enumerate(tqdm(train_dataloader, desc="Iteration")):
 			batch = tuple(t.to(device) for t in batch)# 取出每一batch的编码数据
 			input_ids, input_mask, segment_ids, label_ids, ner_label_ids, ner_mask = batch
@@ -468,7 +475,7 @@ def main():
 
 
 		# eval_test
-		if args.eval_test:
+		if args.eval_test and epoch % args.test_freq == 0:
 
 			model.eval()
 			test_loss, test_accuracy = 0, 0
