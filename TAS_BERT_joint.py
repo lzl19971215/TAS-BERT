@@ -62,8 +62,8 @@ def convert_examples_to_features(examples, label_list, max_seq_length, tokenizer
 
 	features = []
 	all_tokens = []
-	# for (ex_index, example) in enumerate(tqdm(examples)):
-	for (ex_index, example) in enumerate(examples):	
+	for (ex_index, example) in enumerate(tqdm(examples)):
+	# for (ex_index, example) in enumerate(examples):	
 		if tokenize_method == "word_split":
 			# word_split
 			word_num = 0
@@ -447,8 +447,8 @@ def main():
 
 		test_loss, test_accuracy = 0, 0
 		ner_test_loss = 0
-		for step, batch in enumerate(train_dataloader):
-		# for step, batch in enumerate(tqdm(train_dataloader, desc="Iteration")):
+		# for step, batch in enumerate(train_dataloader):
+		for step, batch in enumerate(tqdm(train_dataloader, desc="Iteration")):
 			if (step + 1) % 300 == 0:
 				print("[{}] Training Epoch: {} Step: {}".format(datetime.datetime.now(), epoch, step+1))					
 			batch = tuple(t.to(device) for t in batch)
