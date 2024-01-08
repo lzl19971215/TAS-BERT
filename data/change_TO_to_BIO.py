@@ -15,10 +15,8 @@ def TSV_file(name):
 	return '{}.tsv'.format(name)
 
 
-def change_TO_to_BIO(path, file_name):
-	input_path = path + '/TO'
+def change_TO_to_BIO(input_path, output_path, file_name):
 	entity_label = r"T+"
-	output_path = path + '/BIO'
 	file_out = file_name
 	if not os.path.exists(output_path):
 		os.makedirs(output_path)

@@ -196,15 +196,26 @@ if __name__ == '__main__':
 						help='dataset, as a folder name, you can choose from semeval2015 and semeval2016',
 						default='laptop'
 						)
-	parser.add_argument('--n_sample_per_sentence',
+	parser.add_argument('--output_folder',
+						type=str,
+						help='output data dir',
+						default=''
+						)	
+	parser.add_argument('--n_aspect_per_sentence',
 						type=int,
 						default=-1,
 						help='sample num for training per sample',
 						)
+	parser.add_argument('--sample_test',
+						action='store_true',
+						default=False,
+						help='whether to sample test data',
+						)	
 	args = parser.parse_args()
 
 	path = args.dataset + '/three_joint'
-	output_path = path + '/TO'
+	output_path_to = os.path.join(path, 'TO', args.output_folder)
+	output_path_bio = os.path.join(path, 'BIO', args.output_folder)
 
 	if args.dataset == 'semeval2015':
 		train_file = 'ABSA_15_Restaurants_Train'
@@ -223,8 +234,9 @@ if __name__ == '__main__':
 
 	for input_file, output_file in zip([train_file, test_file], [train_output, test_output]):
 		# get preprocessed data, TO labeling schema
-		n_sample_per_sentence = args.n_sample_per_sentence if 'test' not in input_file else -1
-		create_dataset_file(args.dataset, output_path, input_file, output_file, compose_set, n_sample_per_sentence=n_sample_per_sentence)
+		n_aspect_per_sentence = -1 if ('test' in input_file and not args.sample_test ) else args.n_aspect_per_sentence
+		n_sample_per_sentence = n_aspect_per_sentence * 3 if n_aspect_per_sentence != -1 else -1
+		create_dataset_file(args.dataset, output_path_to, input_file, output_file, compose_set, n_sample_per_sentence=n_sample_per_sentence)
 		# get preprocessed data, BIO labeling schema
-		change_TO_to_BIO(path, output_file)
+		change_TO_to_BIO(output_path_to, output_path_bio, output_file)
 
